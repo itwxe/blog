@@ -1,0 +1,209 @@
+---
+title: Typora+PicGo+LskyPro打造舒适写作环境
+tags:
+  - 写作工具
+permalink: '/posts/6eb96d2e'
+date: 2021-08-12 00:00:00
+updated: 2021-08-12 00:00:00
+---
+
+# Typora+PicGo+LskyPro打造舒适写作环境
+
+> 作者：IT王小二
+>
+> 博客：[https://itwxe.com](https://www.itwxe.com/)
+
+工欲善其事，必先利其器。这篇文章教你 Typora + PicGo + LskyPro 打造舒适写作环境。
+
+不知不觉停更好多天啊，最近比较工作和业余都比较忙。工作忙着修bug和写 bug；业余最近折腾了一下博客，使用了泛域名，Nginx配置拆分，博客网站样式优化，博客增加CDN等等...后面这些都会写成文章，感兴趣的小伙伴欢迎关注啊。
+
+写作方面图床从自建 MinIO 迁移到了自建图床 Lsky Pro，这也是本篇的重点内容啦，同时开通了自己的微信公众号，也自己使用开源工具 [doocs/md](https://github.com/doocs/md) 搭建了 [一键把 Markdown 转换为微信公众号文章页面](https://md.itwxe.com)，接下来会同时往微信公众号同步文章。
+
+闲聊结束，接下来正文开始。
+
+## 一、Typora+PicGo+Lsky Pro的作用
+
+[Typora](https://www.typora.io/)：所见即所得的 Markdown 编辑器，支持 MacOS、Window、Linux 平台，超多的快捷键，大大的提高写作效率。
+
+[PicGo](https://github.com/Molunerfinn/PicGo)：将图片上传到图床的工具，支持目前主流的图床和对象存储(阿里云 OSS、腾讯云 COS等)。和 Typora 搭配使用，可以将本地截图的直接复制到 Typora 后自动上传图床，返回图床图片链接，免除保存本地图片、路径错误等问题的烦恼。同样支持 MacOS、Window、Linux 平台。
+
+[Lsky Pro](https://github.com/wisp-x/lsky-pro.git)：一个开源图床，用来最终存放图片的地方，支持第三方云储存，本地、阿里云 OSS、腾讯云 COS、七牛云、又拍云、FTP。
+
+## 二、Lsky Pro的搭建
+
+### 1. 为什么选择Lsky Pro
+
+可以说要是写 MarkDown没有个图床，光文章里面的图片就能把你折腾疯掉，刚开始使用 MarkDown 的小伙伴相信深有体会。
+
+当然有小伙伴会使用各种第三方图床，而第三方图床啥优点都有，唯一的缺点那就是如果第三方图床跑路了，那么你的图片就都没了。所以，为了保证自己数据的稳定性，有服务器的情况下自建图床是比较好的选择。
+
+前面也提到了，之前我写文章一直使用的是类似于阿里云 OSS、腾讯云 COS的对象存储开源工具 MinIO，MinIO足够轻量，不依赖其他第三方组件，搭建起来简单好用，一行命令就能搭建搞定。想要知道MinIO怎么配合使用的可以留言啊，要是人多我就出一篇文章，哈哈哈。
+
+可惜最近我的需求上升了，想要一个更方便管理和预览图片，同时能够将图片自动水印的图床，
+
+这时候请求一下万能的谷哥、度姐，锁定了两个好用的开源图床，[Lsky Pro](https://github.com/wisp-x/lsky-pro.git) 和 [Chevereto-Free](https://github.com/chevereto/Chevereto-Free)，其实就目前来说如果不需要将图片存储到第三方云存储的话，那么 Chevereto-Free 可能是一个比较好的选择，不过可惜 Chevereto-Free 的作者已经宣布 Chevereto-Free 即将在 2021年12月31日结束维护，专注于他们的付费版本，所以最终我选择了 Lsky Pro 来搭建图床。
+
+### 2. 使用Docker搭建Lsky Pro图床
+
+Lsky Pro源码GitHub地址：[https://github.com/wisp-x/lsky-pro](https://github.com/wisp-x/lsky-pro)
+
+Lsky Pro官方文档地址：[https://www.kancloud.cn/wispx/lsky-pro](https://www.kancloud.cn/wispx/lsky-pro)
+
+从 Redeme 里面也可以看到，Lsky Pro 是一个 PHP 写的程序，我作为一个 Java 程序员，Vue项目我都能部署一下，PHP 项目的部署，我属实不会啊，那咋办，我聪明的小脑袋一转，天下还有我 Docker 部署不了的项目。心里默念一句 Docker，真香！
+
+然后令我傻眼的是，我一翻官方安装文档，Lsky Pro 目前还不支持 Docker 部署，我...GitHub搜索一下，就没有我小二解决不了的事情。果然找到了一个小哥哥或者小姐姐提供的 Dockerfile文件，这下不就好起来了，这里贴上小哥哥或者小姐姐的 Dockerfile 地址：[https://github.com/Handsomedoggy/lsky-pro/blob/master/Dockerfile](https://github.com/Handsomedoggy/lsky-pro/blob/master/Dockerfile)，感谢感谢。
+
+下面安装我会使用 Docker 来安装 Lsky Pro 图床，镜像已经打包到 [我的 Docker 仓库](https://hub.docker.com/r/itwxe/lskypro/tags?page=1&ordering=last_updated)，小伙伴们直接使用就好啦。
+
+我的 Docker 文件地址放在我自己的 GitHub 仓库：[https://github.com/itwxe/lsky-pro/tree/itwxe](https://github.com/itwxe/lsky-pro/tree/itwxe)，如果你对 Docker 比较熟悉，可以 clone 项目后自己编译成镜像，其中用来构建镜像的文件是：000-default.conf、entrypoint.sh、Dockerfile，就下面图中的文件啦。
+
+![Docker化文件](https://images.itwxe.com/images/2021/08/12/f8938a2fb0ffc.png)
+
+当然，你要是对 PHP 熟悉，当然你也可以自己按照官方文档来搭建。
+
+**环境说明：**
+
+> 操作系统：CentOS7.6
+>
+> Docker版本：docker-ce-18.09.9
+>
+> Lsky Pro版本：1.6.3
+>
+> MySQL版本：5.7
+
+**安装前提**
+
+前提需要安装好 Docker 和 MySQL，如果你已经有这两个环境了，那么可以跳过这个步骤；如果没有这两个环境小伙伴可以分别查看下面两篇文章
+
+- 安装Docker：[https://www.itwxe.com/posts/ca1638ad/](https://www.itwxe.com/posts/ca1638ad/)
+- 安装MySQL：[https://www.itwxe.com/posts/53489f6d/](https://www.itwxe.com/posts/53489f6d/)
+
+安装好 MySQL 之后需要创建数据库 lsky，后面配置需要用到，命令及过程截图如下：
+
+```bash
+# 进入docker mysql容器
+docker exec -it mysql /bin/bash
+# 登录MySQL
+mysql -uroot -p
+# 创建数据库lsky
+create database if not exists lsky default character set = 'utf8mb4';
+```
+
+![创建lsky数据库](https://images.itwxe.com/images/2021/08/12/541311f6a584a.png)
+
+**安装 Lsky Pro**
+
+以前我一般都使用虚拟机来演示，此处使用演示的服务器是我的腾讯云香港服务器，使用满199-100券薅羊毛来的试验机。
+
+有了 Docker 和 MySQL 环境之后，安装 Lsky Pro 也变得极为简单，同样一行命令搞定：
+
+```bash
+docker run -d --name=lskypro -p 4080:80 -v /itwxe-hk/dockerData/lskypro:/var/www/html itwxe/lskypro:1.6.3
+```
+
+启动过程截图：
+
+![LskyPro安装1](https://images.itwxe.com/images/2021/08/12/58ec75f72d61a.png)
+
+启动成功之后访问 http://ip:port，当然如果你要搭配 域名 + https 使用，在控制台配置域名映射服务器后，我的Nginx配置参考如下：
+
+```bash
+    server {
+        listen 443 ssl;
+        server_name images.itwxe.com;
+        ssl_certificate /usr/local/nginx/ssl/any/fullchain.cer;
+        ssl_certificate_key /usr/local/nginx/ssl/any/itwxe.com.key;
+        ssl_session_cache shared:SSL:1m;
+        ssl_session_timeout 30m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers HIGH:!aNULL:!MD5:!EXPORT56:!EXP;
+        ssl_prefer_server_ciphers on;
+        proxy_connect_timeout 500;
+        proxy_send_timeout 500;
+        proxy_read_timeout 500;
+        client_max_body_size 10m;
+
+        location / {
+            proxy_pass http://127.0.0.1:4080;
+            proxy_set_header Host $host;
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header REMOTE-HOST $remote_addr;
+        }
+    }
+```
+
+当然这里试验机我就不映射域名了，我的地址是 `http://43.132.156.226:4080`，就可以看到下面的界面了，当然你看到这篇文章的时候可能这个地址已经访问不了了，试验机通常试验完都会快照回滚的。
+
+![LskyPro安装2](https://images.itwxe.com/images/2021/08/12/12c30270074c0.png)
+
+看到这个界面之后点击下一步，输入你的 MySQL 地址，用户名密码等信息，点击配置数据库。
+
+![LskyPro安装3](https://images.itwxe.com/images/2021/08/12/ae7ef8655c528.png)
+
+配置之后输入你的管理员信息。
+
+![LskyPro安装4](https://images.itwxe.com/images/2021/08/12/801dd341294fb.png)
+
+安装成功后的截图。
+
+![LskyPro安装5](https://images.itwxe.com/images/2021/08/12/23a8deeed0920.png)
+
+
+
+![LskyPro安装6](https://images.itwxe.com/images/2021/08/12/e6d0f6e19f067.png)
+
+用你配置的管理员账号登录后就可以管理了，全界面化中文操作，相信小可爱们看到界面多点点就知道使用啦，例如关闭注册、不允许游客上传等等都在界面上可以配置啦。其中有个地方需要注意的就是需要开放 API 接口，后期 PicGo 需要使用接口上传图片到图床，配置如图：
+
+![LskyPro配置接口](https://images.itwxe.com/images/2021/08/12/dd250dd3ad615.png)
+
+设置之后刷新界面界面就会出现接口菜单了，如图：
+
+![image-20210812074329584](https://images.itwxe.com/images/2021/08/12/789c5b16137df.png)
+
+这个界面中标红的两个东西我们后面需要使用，**当然这里的 Token 是示例 Token, 自己生成的 Token 千万不要暴露给别人**，当然我的是实验机器，所以无所谓啦，你看到这篇文章的时候已经访问不了了，访问链接 `http://43.132.156.226:4080/api/token?email=itwxe@qq.com&password=123456`，其中网页地址、端口、email、password 替换成自己的信息，会返回如下图的 Token.
+
+![生成LskyProToken](https://images.itwxe.com/images/2021/08/12/4d59023604d51.png)
+
+当然你如果和我一样有全局水印需求的话，可以阅读 Lsky Pro 官方文档或在留言，此处就不细说了，不然这篇文章的篇幅就要太长了，有些东西太长也不好，哈哈哈。
+
+**划重点：如果后期需要迁移数据，需要同时迁移图床数据和 MySQL中 lsky 数据库的数据，否则数据不完整！**
+
+## 三、PicGo的使用和配置
+
+PicGo GitHub地址：[https://github.com/Molunerfinn/PicGo](https://github.com/Molunerfinn/PicGo)
+
+下载自己系统对应的版本安装即可啦，安装之后打开软件，点击插件安装，搜索 lskypro 安装插件，当然我的已经安装过了。
+
+![安装lskypro插件](https://images.itwxe.com/images/2021/08/12/4e2e91194eb50.png)
+
+安装成功之后点击图床设置，设置为 Lsky Pro 为默认图床，输入 Url 和 Token 后确定即可。
+
+![配置PicGo](https://images.itwxe.com/images/2021/08/12/d2f05a83d9291.png)
+
+## 四、Typora的使用
+
+Typora官网：[https://www.typora.io/](https://www.typora.io/)
+
+同样官网下载自己系统对应的版本安装，安装之后打开软件，偏好设置 -> 图像。
+
+![Typora上传图片设置](https://images.itwxe.com/images/2021/08/12/35b300ac9cafd.png)
+
+点击验证图片上传选项，验证是否可以正常上传。
+
+![验证图片上传](https://images.itwxe.com/images/2021/08/12/739dce7054702.png)
+
+验证成功后只要截图后，直接 ctrl + v 粘贴到Typora里面就可以自动上传到自建的图床并且返回图片链接了，如我正在写文章的示例结果图：
+
+![效果图](https://images.itwxe.com/images/2021/08/12/77e679e043e3a.png)
+
+最后查看一下我们的图床，图片是否上传。
+
+![图片上传结果](https://images.itwxe.com/images/2021/08/12/43a88f8a69ecd.png)
+
+可以看到，刚才上传的三张图片正常上传到自建的 Lsky Pro 图床了。
+
+至此，一个舒适的写作环境就搭建完成了，再也不用为 MarkDown 中的图片烦恼，当然你要是 MacOS 系统，那么 uPic 工具替代 PicGo 也是个不错的选择。
+
+> 都读到这里了，来个 **点赞、评论、关注、收藏** 吧！

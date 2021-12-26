@@ -1,0 +1,98 @@
+---
+title: 07.Docker搭建Redis5.0并挂载数据
+tags:
+  - Docker
+permalink: '/posts/7fbf91c'
+date: 2021-07-21 00:00:00
+updated: 2021-07-21 00:00:00
+---
+
+# Docker搭建Redis5.0并挂载数据
+
+> 作者：IT王小二
+>
+> 博客：[https://itwxe.com](https://www.itwxe.com/)
+
+记录 Docker 搭建 Redis5.0 并挂载数据过程，搭建参考自 [Docker Hub](https://registry.hub.docker.com/_/redis)。
+
+## 一、简单挂载持久化数据
+
+```bash
+docker run -d -p 6379:6379 --name redis \
+-v /itwxe/dockerData/redis/data:/data \
+redis:5.0.8 redis-server --appendonly yes
+```
+
+这样仅仅是挂载了数据，Redis 没有密码等配置，任何人都可以连接，如果是服务器在公网那么极度不安全。
+
+于是按照惯例进入容器查找 redis 的配置文件放在哪里，然后配置好挂载即可，结果发现容器内并没有 redis.conf 文件。
+
+在 [Docker Hub](https://registry.hub.docker.com/_/redis) 中提到，需要自定义 redis.conf 使用 DockerFile 构建镜像。
+
+![docker使用自定义配置那件构建redis镜像](https://images.itwxe.com/images/2021/08/05/49d0f44bb3794.png)
+
+## 二、通过DockerFile构建镜像，指定配置文件启动
+
+1、先去 [Redis官网](https://redis.io/download) 下个和镜像版本一致的版本，我的版本是5.0.8，然后解压文件，将 redis.conf 上传到服务器。
+
+2、修改 redis.conf 配置，主要配置如下，根据自己需求修改。
+
+```txt
+# 修改后台启动, 默认为daemonize no，docker启动默认即可，后台启动会导致容器退出
+daemonize no
+
+# 客户端闲置多长时间后断开连接, 默认为0关闭此功能                               
+timeout 0
+
+# 设置密码, 默认被注释, 取消注释修改为自定义密码(我的是123456)
+requirepass 123456
+
+# 监听ip, 允许访问的ip, 默认为127.0.0.1, 修改为0.0.0.0(允许所有服务器ip访问)或者注释掉
+bind 0.0.0.0
+
+# 指定监听端口, 默认为6379, 此处我保持默认
+port 6379
+
+# 是否开启AOF持久化，默认为no
+appendonly yes
+
+# 修改AOF及RBD存放路径, 默认为./, 修改为/data
+dir /data
+
+# 修改log存放路径, 默认为"", 修改为"/data/redis_6379.log"
+logfile "/data/redis_6379.log"
+```
+
+3、创建 Dockerfile 文件，添加内容，不知道怎么使用 Dockerfile 怎么使用的可以看看 [DockerFile构建镜像](https://www.itwxe.com/posts/be6627e1/) 。
+
+```bash
+FROM redis:5.0.8
+COPY redis.conf /usr/local/etc/redis/redis.conf
+CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]
+```
+
+4、构建镜像。
+
+```bash
+docker build -t itwxe/redis:5.0.8 .
+```
+
+![构建自定义配置redis镜像](https://images.itwxe.com/images/2021/08/05/fe5afbb1f14dd.png)
+
+5、启动构建的镜像，并挂载数据。
+
+```bash
+docker run -d -p 6379:6379 --name redis \
+-v /itwxe/dockerData/redis/data:/data \
+itwxe/redis:5.0.8
+```
+
+可以看到数据正常挂载了。
+
+![自定义redis镜像自动](https://images.itwxe.com/images/2021/08/05/6b19d8590d26a.png)
+
+同时可以测试下密码也可以正常连接。
+
+![自定义redis容器连接](https://images.itwxe.com/images/2021/08/05/32e0af2744c31.png)
+
+> 都读到这里了，来个 **点赞、评论、关注、收藏** 吧！
