@@ -11,13 +11,13 @@ updated: 2021-07-19 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 记录 Docker 搭建 MySQL 并挂载数据过程，搭建过程参考自 [Docker Hub](https://registry.hub.docker.com/_/mysql)。
 
 ## 一、Docker搭建MySQL并挂载数据
 
-1、首先安装好 Docker，不知道怎么安装的可以看下 [CentOS7安装Docker初体验](https://www.itwxe.com/posts/ca1638ad/) 。
+1、首先安装好 Docker，不知道怎么安装的可以看下 [CentOS7安装Docker初体验](https://itwxe.com/posts/ca1638ad/) 。
 
 2、下载 MySQL5.7 镜像。
 

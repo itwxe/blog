@@ -50,7 +50,7 @@ Hexo 迁移到 VuePress 碰到了挺多坑，不过好在解决了，正式上�
 
 微信公众号：IT王小二
 
-![IT王小二](https://www.itwxe.com/images/system/qrcode_avatar.png)
+![IT王小二](https://itwxe.com/images/system/qrcode_avatar.png)
 
 ## 最后
 

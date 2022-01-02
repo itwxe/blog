@@ -13,7 +13,7 @@ updated: 2021-04-19 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 Linux(CentOS7) 下安装 jdk1.8 操作过程。
 

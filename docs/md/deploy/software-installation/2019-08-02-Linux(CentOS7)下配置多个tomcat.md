@@ -13,13 +13,13 @@ updated: 2019-08-02 00:00:01
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 记录 Linux(CentOS7) 下配置多个 tomcat 的操作过程。
 
 ## 一、下载tomcat
 
-> 前提：安装配置好jdk环境，未配置可参考[Linux(CentOS7)下安装jdk1.8](https://www.itwxe.com/posts/c74ad2a1/)。
+> 前提：安装配置好jdk环境，未配置可参考[Linux(CentOS7)下安装jdk1.8](https://itwxe.com/posts/c74ad2a1/)。
 
 从 [tomcat官网](http://tomcat.apache.org/) 选择你想要的 tomcat 版本下载后上传 Linux，我的版本是 apache-tomcat-8.5.41.tar.gz，把 tomcat 放在 `/usr/local/tomcat` 目录下，可根据需要修改。
 

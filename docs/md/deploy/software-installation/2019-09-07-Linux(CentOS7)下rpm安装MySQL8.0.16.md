@@ -12,7 +12,7 @@ updated: 2019-09-07 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 记录一下自己在 CentOS7 下 rpm 安装 MySQL8.0.16 的过程。
 

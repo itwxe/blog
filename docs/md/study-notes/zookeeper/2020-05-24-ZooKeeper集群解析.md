@@ -11,9 +11,9 @@ updated: 2020-05-24 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
-这篇文章中来介绍一下 ZooKeeper 相关的集群角色，还有 ZAB协议，集群的安装在 [ZooKeeper入门](https://www.itwxe.com/posts/8c686403/) 中有介绍。
+这篇文章中来介绍一下 ZooKeeper 相关的集群角色，还有 ZAB协议，集群的安装在 [ZooKeeper入门](https://itwxe.com/posts/8c686403/) 中有介绍。
 
 ## 一、ZooKeeper集群中的角色
 

@@ -11,7 +11,7 @@ updated: 2020-05-25 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 在分布式的情况下，sychornized 和 Lock 已经不能满足我们的要求了，那么就需要使用第三方的锁了，这里我们就使用 ZooKeeper 来实现一个分布式锁。
 

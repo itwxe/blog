@@ -11,7 +11,7 @@ updated: 2020-05-22 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 这里介绍两个客户端，一个为 ZooKeeper 原生客户端，一个为 ZkClient。
 

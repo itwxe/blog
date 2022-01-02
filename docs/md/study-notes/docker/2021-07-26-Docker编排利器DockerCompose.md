@@ -11,7 +11,7 @@ updated: 2021-07-26 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 Docker 编排利器 DockerCompose，编排之后可以一次性通过一条命令启动一组服务。
 
@@ -158,11 +158,11 @@ docker-compose down
 
 此处还是以自己写的项目为示例，我的项目依赖 MySQL、Redis、minio(非必要)。
 
-1、打包 SpringBoot 项目镜像，打包可以参考 [Docker使用maven插件打包SpringBoot项目](https://www.itwxe.com/posts/2e8bc142/)。
+1、打包 SpringBoot 项目镜像，打包可以参考 [Docker使用maven插件打包SpringBoot项目](https://itwxe.com/posts/2e8bc142/)。
 
-2、我的项目启动依赖 MySQL 中的 sunny 库，首先得创建容器，挂载宿主机目录，可以参考 [Docker搭建MySQL并挂载数据](https://www.itwxe.com/posts/53489f6d/)。
+2、我的项目启动依赖 MySQL 中的 sunny 库，首先得创建容器，挂载宿主机目录，可以参考 [Docker搭建MySQL并挂载数据](https://itwxe.com/posts/53489f6d/)。
 
-3、项目依赖 Redis 镜像自定义配置启动，可以参考 [Docker搭建Redis5.0并挂载数据](https://www.itwxe.com/posts/7fbf91c/)。
+3、项目依赖 Redis 镜像自定义配置启动，可以参考 [Docker搭建Redis5.0并挂载数据](https://itwxe.com/posts/7fbf91c/)。
 
 4、修改项目 MySQL 和 Redis 使用别名访问，以 MySQL 为例。
 

@@ -12,7 +12,7 @@ updated: 2019-11-02 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 记录一下自己在 Linux(CentOS 7) 下安装 MinIO 过程，用于对象存储。
 

@@ -12,7 +12,7 @@ updated: 2021-04-20 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 记录一下 Linux(CentOS7) 下 Nginx 安装过程。
 

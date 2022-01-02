@@ -12,9 +12,9 @@ updated: 2019-11-11 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
-记录一下自己在 CentOS7 下二进制安装 MySQL5.7.26 的过程，之前使用 [Linux(CentOS7)下rpm安装MySQL8.0.16](https://www.itwxe.com/posts/79382061/) 之后发现 rpm 方式安装不利于维护，也不利于单机安装 MySQL 多实例，所以这里记录一下二进制安装过程，理论上8.0二进制安装按此方法也没问题，毕竟官方文档 5.7和8.0 版本的安装文档步骤都一致。
+记录一下自己在 CentOS7 下二进制安装 MySQL5.7.26 的过程，之前使用 [Linux(CentOS7)下rpm安装MySQL8.0.16](https://itwxe.com/posts/79382061/) 之后发现 rpm 方式安装不利于维护，也不利于单机安装 MySQL 多实例，所以这里记录一下二进制安装过程，理论上8.0二进制安装按此方法也没问题，毕竟官方文档 5.7和8.0 版本的安装文档步骤都一致。
 
 ## 一、准备工作
 

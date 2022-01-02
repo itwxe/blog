@@ -14,19 +14,19 @@ features:
 ---
 
 <div style="text-align:center;padding:30px 15px;">
-    <a rel="noopener noreferrer" href="https://www.itwxe.com">
-        <img src="https://www.itwxe.com/images/system/footer-author.svg" alt="Author: IT王小二">
+    <a rel="noopener noreferrer" href="https://itwxe.com">
+        <img src="https://itwxe.com/images/system/footer-author.svg" alt="Author: IT王小二">
     </a>
-    <a rel="noopener noreferrer" href="https://www.itwxe.com">
-        <img src="https://www.itwxe.com/images/system/fotter-copyright.svg" alt="Copyright: © 2019 IT王小二 Inc. All rights reserved.">
+    <a rel="noopener noreferrer" href="https://itwxe.com">
+        <img src="https://itwxe.com/images/system/fotter-copyright.svg" alt="Copyright: © 2019 IT王小二 Inc. All rights reserved.">
     </a>
     <a target="_blank" rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">
-        <img src="https://www.itwxe.com/images/system/footer-cc.svg" alt="CC BY-NC-SA 4.0 协议">
+        <img src="https://itwxe.com/images/system/footer-cc.svg" alt="CC BY-NC-SA 4.0 协议">
     </a>
     <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/vuejs/vuepress">
-        <img src="https://www.itwxe.com/images/system/footer-powered.svg" alt="Powered: VuePress">
+        <img src="https://itwxe.com/images/system/footer-powered.svg" alt="Powered: VuePress">
     </a>    
     <a target="_blank" rel="external nofollow noopener noreferrer" href="https://beian.miit.gov.cn/">
-        <img src="https://www.itwxe.com/images/system/footer-icp.svg" alt="ICP-赣ICP备2021001966号-2">
+        <img src="https://itwxe.com/images/system/footer-icp.svg" alt="ICP-赣ICP备2021001966号-2">
     </a>
 </div>

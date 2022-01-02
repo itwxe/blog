@@ -11,7 +11,7 @@ updated: 2020-06-08 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 ## 一、准备工作
 

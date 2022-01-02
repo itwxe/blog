@@ -11,7 +11,7 @@ updated: 2021-07-21 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 记录 Docker 搭建 Redis5.0 并挂载数据过程，搭建参考自 [Docker Hub](https://registry.hub.docker.com/_/redis)。
 
@@ -63,7 +63,7 @@ dir /data
 logfile "/data/redis_6379.log"
 ```
 
-3、创建 Dockerfile 文件，添加内容，不知道怎么使用 Dockerfile 怎么使用的可以看看 [DockerFile构建镜像](https://www.itwxe.com/posts/be6627e1/) 。
+3、创建 Dockerfile 文件，添加内容，不知道怎么使用 Dockerfile 怎么使用的可以看看 [DockerFile构建镜像](https://itwxe.com/posts/be6627e1/) 。
 
 ```bash
 FROM redis:5.0.8

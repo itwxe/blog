@@ -12,9 +12,9 @@ updated: 2021-08-19 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
-上一期写了 [使用Let's Encrypt实现网站https化](https://www.itwxe.com/posts/c0cb6cbc/) ，随着二级域名的增多，每个二级域名需要一张 SSL 证书，这可太不优雅了，泛域名表示我可以更优雅。
+上一期写了 [使用Let's Encrypt实现网站https化](https://itwxe.com/posts/c0cb6cbc/) ，随着二级域名的增多，每个二级域名需要一张 SSL 证书，这可太不优雅了，泛域名表示我可以更优雅。
 
 本来 Let's Encrypt 泛域名使用、Nginx 配置拆分是准备分成两篇文章来写的，可是两篇文章又感觉篇幅过短和冗余。
 
@@ -118,7 +118,7 @@ acme.sh  --renew -d itwxe.com -d *.itwxe.com --yes-I-know-dns-manual-mode-enough
 
 ## 三、Nginx配置拆分
 
-这里我使用的是 Nginx 作为反向代理，又不知道怎么安装 Nginx 的小伙伴可以访问 [https://www.itwxe.com/posts/1334c88e/](https://www.itwxe.com/posts/1334c88e/) 来安装 Nginx。
+这里我使用的是 Nginx 作为反向代理，又不知道怎么安装 Nginx 的小伙伴可以访问 [https://itwxe.com/posts/1334c88e/](https://itwxe.com/posts/1334c88e/) 来安装 Nginx。
 
 ### 1. 复制证书文件
 

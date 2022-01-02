@@ -11,7 +11,7 @@ updated: 2021-07-14 00:00:00
 
 > 作者：IT王小二
 >
-> 博客：[https://itwxe.com](https://www.itwxe.com/)
+> 博客：[https://itwxe.com](https://itwxe.com/)
 
 前面介绍了怎么通过容器生成镜像，这里来记录一下 DockerFile 构建镜像，学习参考来自 [菜鸟教程](https://www.runoob.com/docker/docker-dockerfile.html) 。
 
