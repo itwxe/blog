@@ -98,7 +98,7 @@ module.exports = {
         // }],
         // see: https://github.com/ekoeryanto/vuepress-plugin-sitemap
         ['sitemap', {
-            hostname: 'https://www.itwxe.com',
+            hostname: 'https://itwxe.com',
             // 排除无实际内容的页面
             exclude: ["/404.html"],
             // 简单修复非IDE环境下 yarn build 后 vuepress-plugin-sitemap 插件 RangeError: Invalid time value 的错误，修复后IDE环境下sitemap.xml日期异常

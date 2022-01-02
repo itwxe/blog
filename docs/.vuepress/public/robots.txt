@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://www.itwxe.com/sitemap.xml
+Sitemap: https://itwxe.com/sitemap.xml
