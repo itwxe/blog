@@ -41,7 +41,7 @@ Hexo 迁移到 VuePress 碰到了挺多坑，不过好在解决了，正式上�
 
 ```
 作者：IT王小二
-原文链接：https://itwxe.com
+原文出处：https://itwxe.com
 ```
 
 ## 联系方式
