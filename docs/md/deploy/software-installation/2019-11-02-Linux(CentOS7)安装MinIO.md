@@ -3,7 +3,7 @@ title: Linux(CentOS7)安装MinIO
 tags:
   - Linux
   - MinIO
-permalink: '/posts/3d9856'
+permalink: '/posts/3d9856.html'
 date: 2019-11-02 00:00:00
 updated: 2019-11-02 00:00:00
 ---

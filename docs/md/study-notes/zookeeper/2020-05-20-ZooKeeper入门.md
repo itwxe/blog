@@ -2,7 +2,7 @@
 title: 01.ZooKeeper入门
 tags:
   - ZooKeeper
-permalink: '/posts/8c686403'
+permalink: '/posts/8c686403.html'
 date: 2020-05-20 00:00:00
 updated: 2020-05-20 00:00:00
 ---

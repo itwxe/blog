@@ -2,7 +2,7 @@
 title: 04.ZooKeeper分布式锁的实现
 tags:
   - ZooKeeper
-permalink: '/posts/6d9ff3d6'
+permalink: '/posts/6d9ff3d6.html'
 date: 2020-05-25 00:00:00
 updated: 2020-05-25 00:00:00
 ---

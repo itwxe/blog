@@ -2,7 +2,7 @@
 title: 04.DockerFile构建镜像
 tags:
   - Docker
-permalink: '/posts/be6627e1'
+permalink: '/posts/be6627e1.html'
 date: 2021-07-14 00:00:00
 updated: 2021-07-14 00:00:00
 ---

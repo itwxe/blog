@@ -4,7 +4,7 @@ tags:
   - Linux
   - SSH
   - 可视化SFTP
-permalink: '/posts/6f0bce6a'
+permalink: '/posts/6f0bce6a.html'
 date: 2020-10-28 00:00:00
 updated: 2020-10-28 00:00:00
 ---

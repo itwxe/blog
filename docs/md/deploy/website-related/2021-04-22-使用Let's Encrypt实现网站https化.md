@@ -3,7 +3,7 @@ title: 使用Let's Encrypt实现网站https化
 tags:
   - SSL
   - Nginx
-permalink: '/posts/c0cb6cbc'
+permalink: '/posts/c0cb6cbc.html'
 date: 2021-04-22 00:00:00
 updated: 2021-04-22 00:00:00
 ---

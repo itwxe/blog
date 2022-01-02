@@ -2,7 +2,7 @@
 title: 05.Docker使用maven插件打包SpringBoot项目
 tags:
   - Docker
-permalink: '/posts/2e8bc142'
+permalink: '/posts/2e8bc142.html'
 date: 2021-07-16 00:00:00
 updated: 2021-07-16 00:00:00
 ---

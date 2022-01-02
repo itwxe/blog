@@ -2,7 +2,7 @@
 title: 03.ZooKeeper集群解析
 tags:
   - ZooKeeper
-permalink: '/posts/2c8e19cc'
+permalink: '/posts/2c8e19cc.html'
 date: 2020-05-24 00:00:00
 updated: 2020-05-24 00:00:00
 ---

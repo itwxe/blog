@@ -1,6 +1,6 @@
 ---
 title: 指南
-permalink: '/posts/guide'
+permalink: '/posts/guide.html'
 ---
 
 # 指南

@@ -3,7 +3,7 @@ title: Linux(CentOS7)下rpm安装MySQL8.0.16
 stags:
   - Linux
   - MySQL
-permalink: '/posts/79382061'
+permalink: '/posts/79382061.html'
 date: 2019-09-07 00:00:00
 updated: 2019-09-07 00:00:00
 ---

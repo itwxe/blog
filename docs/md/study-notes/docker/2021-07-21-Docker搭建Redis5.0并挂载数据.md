@@ -2,7 +2,7 @@
 title: 07.Docker搭建Redis5.0并挂载数据
 tags:
   - Docker
-permalink: '/posts/7fbf91c'
+permalink: '/posts/7fbf91c.html'
 date: 2021-07-21 00:00:00
 updated: 2021-07-21 00:00:00
 ---

@@ -3,7 +3,7 @@ title: Linux(CentOS7)安装Redis5.0
 tags:
   - Linux
   - Redis
-permalink: '/posts/c162db60'
+permalink: '/posts/c162db60.html'
 date: 2019-11-02 14:16:00
 updated: 2019-11-02 14:16:00
 ---

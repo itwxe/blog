@@ -2,7 +2,7 @@
 title: 02.ZooKeeper Java客户端
 tags:
   - ZooKeeper
-permalink: '/posts/5a33d634'
+permalink: '/posts/5a33d634.html'
 date: 2020-05-22 00:00:00
 updated: 2020-05-22 00:00:00
 ---

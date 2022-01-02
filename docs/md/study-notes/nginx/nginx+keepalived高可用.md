@@ -3,7 +3,7 @@ title: nginx+keepalived高可用
 tags:
   - KeepAlived
   - Nginx
-permalink: '/posts/4c06301f'
+permalink: '/posts/4c06301f.html'
 date: 2020-11-03 00:00:00
 updated: 2020-11-03 00:00:00
 ---

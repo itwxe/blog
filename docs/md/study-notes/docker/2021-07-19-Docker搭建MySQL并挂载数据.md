@@ -2,7 +2,7 @@
 title: 06.Docker搭建MySQL并挂载数据
 tags:
   - Docker
-permalink: '/posts/53489f6d'
+permalink: '/posts/53489f6d.html'
 date: 2021-07-19 00:00:00
 updated: 2021-07-19 00:00:00
 ---

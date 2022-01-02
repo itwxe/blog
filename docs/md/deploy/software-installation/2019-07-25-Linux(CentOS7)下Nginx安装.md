@@ -3,7 +3,7 @@ title: Linux(CentOS7)下Nginx安装
 tags:
   - Linux
   - Nginx
-permalink: '/posts/1334c88e'
+permalink: '/posts/1334c88e.html'
 date: 2019-07-25 00:00:00
 updated: 2021-04-20 00:00:00
 ---

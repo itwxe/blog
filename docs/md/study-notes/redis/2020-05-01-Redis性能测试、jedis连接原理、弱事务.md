@@ -2,7 +2,7 @@
 title: 03.Redis性能测试、jedis连接原理、弱事务
 tags: 
   - Redis
-permalink: '/posts/6a029d95'
+permalink: '/posts/6a029d95.html'
 date: 2020-05-01 00:00:00
 updated: 2020-05-01 00:00:00
 ---

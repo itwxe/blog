@@ -4,7 +4,7 @@ tags:
   - Linux
   - jdk
   - tomcat
-permalink: '/posts/aed7c57b'
+permalink: '/posts/aed7c57b.html'
 date: 2019-08-02 00:00:01
 updated: 2019-08-02 00:00:01
 ---

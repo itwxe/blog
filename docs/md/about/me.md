@@ -1,6 +1,6 @@
 ---
 title: 关于我
-permalink: '/about/me'
+permalink: '/about/me.html'
 date: 2021-05-27 00:00:00
 updated: 2021-05-27 00:00:00
 ---

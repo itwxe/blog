@@ -2,7 +2,7 @@
 title: 08.Docker编排利器DockerCompose
 tags:
   - Docker
-permalink: '/posts/e4feb9b4'
+permalink: '/posts/e4feb9b4.html'
 date: 2021-07-26 00:00:00
 updated: 2021-07-26 00:00:00
 ---

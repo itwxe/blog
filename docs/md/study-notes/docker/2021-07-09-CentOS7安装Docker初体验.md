@@ -2,7 +2,7 @@
 title: 02.CentOS7安装Docker初体验
 tags:
   - Docker
-permalink: '/posts/ca1638ad'
+permalink: '/posts/ca1638ad.html'
 date: 2021-07-09 00:00:00
 updated: 2021-07-09 00:00:00
 ---

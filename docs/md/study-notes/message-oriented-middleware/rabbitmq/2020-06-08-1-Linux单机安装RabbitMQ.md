@@ -2,7 +2,7 @@
 title: 01.Linux单机安装RabbitMQ
 tags:
   - RabbitMQ
-permalink: '/posts/c5ec20ad'
+permalink: '/posts/c5ec20ad.html'
 date: 2020-06-08 00:00:00
 updated: 2020-06-08 00:00:00
 ---

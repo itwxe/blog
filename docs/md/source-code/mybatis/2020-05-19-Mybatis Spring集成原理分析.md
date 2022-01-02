@@ -2,7 +2,7 @@
 title: 10.Mybatis Spring集成原理分析
 tags:
   - MyBatis
-permalink: '/posts/4771b328'
+permalink: '/posts/4771b328.html'
 date: 2020-05-19 00:00:00
 updated: 2020-05-19 00:00:00
 ---

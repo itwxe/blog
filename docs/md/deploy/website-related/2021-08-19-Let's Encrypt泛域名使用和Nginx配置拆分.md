@@ -3,7 +3,7 @@ title: Let's Encrypt泛域名使用和Nginx配置拆分
 tags:
   - SSL
   - Nginx
-permalink: '/posts/4589e509'
+permalink: '/posts/4589e509.html'
 date: 2021-08-19 00:00:00
 updated: 2021-08-19 00:00:00
 ---

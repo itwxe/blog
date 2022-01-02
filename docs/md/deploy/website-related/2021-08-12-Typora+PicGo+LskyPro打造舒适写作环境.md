@@ -2,7 +2,7 @@
 title: Typora+PicGo+LskyPro打造舒适写作环境
 tags:
   - 写作工具
-permalink: '/posts/6eb96d2e'
+permalink: '/posts/6eb96d2e.html'
 date: 2021-08-12 00:00:00
 updated: 2021-08-12 00:00:00
 ---

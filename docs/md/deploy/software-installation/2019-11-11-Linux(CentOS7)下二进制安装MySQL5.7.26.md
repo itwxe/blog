@@ -3,7 +3,7 @@ title: Linux(CentOS7)下二进制安装MySQL5.7.26
 stags:
   - Linux
   - MySQL
-permalink: '/posts/b1846d73'
+permalink: '/posts/b1846d73.html'
 date: 2019-11-11 00:00:00
 updated: 2019-11-11 00:00:00
 ---
