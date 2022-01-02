@@ -73,6 +73,21 @@
         </div>
       </div>
 
+      <div class="option-box" v-on:mouseover="showToc($event)" v-on:mouseout="hideToc($event)">
+        <img class="nozoom" src="/images/system/other-blogs.png" width="25px" />
+        <span class="show-txt">博客</span>
+        <div class="toc-container">
+          <div class="pos-box">
+            <div class="icon-arrow"></div>
+            <div class="scroll-box" style="text-align:center" >
+              <span style="font-size:0.8rem;font-weight:bold;">「IT王小二」</span>
+              <img src="/images/system/qrcode_avatar.png" height="180px" style="margin:10px;"/>
+              PS：扫码关注微信公众号！
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="option-box" v-if="prev" style="padding-left:2px;text-align:center;" v-bind:title="prev.title">
           <router-link v-if="prev" :to="prev.path" >
             <img src="/images/system/pre.png" width="30px" class="nozoom" />
