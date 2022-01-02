@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
-title: 指南
-permalink: '/posts/guide.html'
-=======
 title: 快速开始
-permalink: '/posts/guide'
->>>>>>> 26176fc9b0d6593867a4540baf1af4f711fcfac5
+permalink: '/posts/guide.html'
 ---
 
 # 快速开始
