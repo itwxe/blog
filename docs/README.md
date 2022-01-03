@@ -18,7 +18,7 @@ features:
         <img src="https://itwxe.com/images/system/footer-author.svg" alt="Author: IT王小二">
     </a>
     <a rel="noopener noreferrer" href="https://itwxe.com">
-        <img src="https://itwxe.com/images/system/fotter-copyright.svg" alt="Copyright: © 2019 IT王小二 Inc. All rights reserved.">
+        <img src="https://itwxe.com/images/system/fotter-copyright.svg" alt="Copyright: © 2019 - present IT王小二 Inc. All rights reserved.">
     </a>
     <a target="_blank" rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">
         <img src="https://itwxe.com/images/system/footer-cc.svg" alt="CC BY-NC-SA 4.0 协议">
