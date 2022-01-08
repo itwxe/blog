@@ -157,6 +157,10 @@ module.exports = {
                         text: '学习笔记',
                         items: [
                             {
+                                text: 'MySQL',
+                                link: '/md/study-notes/mysql/2022-01-03-深入理解MySQL索引底层数据结构.md'
+                            },
+                            {
                                 text: 'Redis',
                                 link: '/md/study-notes/redis/2020-04-30-1-Redis入门.md'
                             },
@@ -183,10 +187,6 @@ module.exports = {
                             {
                                 text: 'Docker',
                                 link: '/md/study-notes/Docker/2021-07-07-揭开Docker的面纱.md'
-                            },
-                            {
-                                text: 'MySQL',
-                                link: '/md/study-notes/mysql/2022-01-03-深入理解MySQL索引底层数据结构.md'
                             }
                         ]
                     },
@@ -232,6 +232,7 @@ module.exports = {
                 ],
                 sidebar: {
                     "/md/read-guide/": getNavReadGuide(),
+                    "/md/study-notes/mysql/": getNavStudyNotesMySQL(),
                     "/md/study-notes/redis/": getNavStudyNotesRedis(),
                     "/md/study-notes/jvm/": getNavStudyNotesJVM(),
                     "/md/study-notes/concurrent/": getNavStudyNotesConcurrent(),
@@ -239,7 +240,6 @@ module.exports = {
                     "/md/study-notes/message-oriented-middleware/": getNavStudyNotesMessageOrientedMiddleware(),
                     "/md/study-notes/nginx/": getNavStudyNotesNginx(),
                     "/md/study-notes/docker/": getNavStudyNotesDocker(),
-                    "/md/study-notes/mysql/": getNavStudyNotesMySQL(),
                     "/md/source-code/mybatis/": getNavSourceCodeMybatis(),
                     "/md/deploy/software-installation/": getNavDeploySoftwareInstallation(),
                     "/md/deploy/website-related/": getNavDeployWebsiteRelated(),
@@ -263,6 +263,22 @@ function getNavReadGuide() {
             sidebarDepth: 2,
             children: [
                 "guide.md"
+            ]
+        }
+    ]
+}
+
+/**
+ * MySQL
+ */
+function getNavStudyNotesMySQL() {
+    return [
+        {
+            title: "MySQL",
+            collapsable: false,
+            sidebarDepth: 2,
+            children: [
+                "2022-01-03-深入理解MySQL索引底层数据结构.md"
             ]
         }
     ]
@@ -408,22 +424,6 @@ function getNavStudyNotesDocker() {
                 "2021-07-19-Docker搭建MySQL并挂载数据.md",
                 "2021-07-21-Docker搭建Redis5.0并挂载数据.md",
                 "2021-07-26-Docker编排利器DockerCompose.md"
-            ]
-        }
-    ]
-}
-
-/**
- * MySQL
- */
-function getNavStudyNotesMySQL() {
-    return [
-        {
-            title: "MySQL",
-            collapsable: false,
-            sidebarDepth: 0,
-            children: [
-                "2022-01-03-深入理解MySQL索引底层数据结构.md"
             ]
         }
     ]
