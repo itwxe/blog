@@ -224,8 +224,25 @@ module.exports = {
                                 link: '/md/about/me.md'
                             },
                             {
-                                text: 'Github',
-                                link: 'https://github.com/itwxe/blog'
+                                text: '小二的链接',
+                                items: [
+                                    {
+                                        text: '掘金',
+                                        link: 'https://juejin.cn/user/2225067267470023/posts'
+                                    },
+                                    {
+                                        text: 'CSDN',
+                                        link: 'https://blog.csdn.net/qq_42349306?type=blog'
+                                    },
+                                    {
+                                        text: '博客园',
+                                        link: 'https://www.cnblogs.com/itwxe'
+                                    },
+                                    {
+                                        text: 'Github',
+                                        link: 'https://github.com/itwxe/blog'
+                                    }
+                                ]
                             }
                         ]
                     }
