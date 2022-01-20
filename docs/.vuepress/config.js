@@ -154,7 +154,7 @@ module.exports = {
                         text: '快速开始', link: '/md/read-guide/guide.md'
                     },
                     {
-                        text: '学习笔记',
+                        text: '专题笔记',
                         items: [
                             {
                                 text: 'MySQL',
@@ -293,9 +293,10 @@ function getNavStudyNotesMySQL() {
         {
             title: "MySQL",
             collapsable: false,
-            sidebarDepth: 2,
+            sidebarDepth: 0,
             children: [
-                "2022-01-03-深入理解MySQL索引底层数据结构.md"
+                "2022-01-03-深入理解MySQL索引底层数据结构.md",
+                "2022-01-18-MySQL体系结构概览.md"
             ]
         }
     ]
