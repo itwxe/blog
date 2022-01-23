@@ -187,6 +187,10 @@ module.exports = {
                             {
                                 text: 'Docker',
                                 link: '/md/study-notes/Docker/2021-07-07-揭开Docker的面纱.md'
+                            },
+                            {
+                                text: '设计模式',
+                                link: '/md/study-notes/design-pattern/2022-01-24-1-重学Java设计模式《实战工厂方法模式》.md'
                             }
                         ]
                     },
@@ -257,6 +261,7 @@ module.exports = {
                     "/md/study-notes/message-oriented-middleware/": getNavStudyNotesMessageOrientedMiddleware(),
                     "/md/study-notes/nginx/": getNavStudyNotesNginx(),
                     "/md/study-notes/docker/": getNavStudyNotesDocker(),
+                    "/md/study-notes/design-pattern/": getNavStudyNotesDesignPattern(),
                     "/md/source-code/mybatis/": getNavSourceCodeMybatis(),
                     "/md/deploy/software-installation/": getNavDeploySoftwareInstallation(),
                     "/md/deploy/website-related/": getNavDeployWebsiteRelated(),
@@ -443,6 +448,57 @@ function getNavStudyNotesDocker() {
                 "2021-07-19-Docker搭建MySQL并挂载数据.md",
                 "2021-07-21-Docker搭建Redis5.0并挂载数据.md",
                 "2021-07-26-Docker编排利器DockerCompose.md"
+            ]
+        }
+    ]
+}
+
+/**
+ * 设计模式
+ */
+function getNavStudyNotesDesignPattern() {
+    return [
+        {
+            title: "创建型模式",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "2022-01-24-1-重学Java设计模式《实战工厂方法模式》.md",
+                "2022-01-24-2-重学Java设计模式《抽象工厂模式》.md",
+                "2022-01-24-3-重学Java设计模式《实战建造者模式》.md",
+                "2022-01-24-4重学 Java 设计模式《实战原型模式》.md",
+                "2022-01-24-5-重学 Java 设计模式《实战单例模式》.md"
+            ]
+        },
+        {
+            title: "结构型模式",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "2022-01-24-6-重学 Java 设计模式《适配器模式》.md",
+                "2022-01-24-7-重学 Java 设计模式《实战桥接模式》.md",
+                "2022-01-24-8-重学 Java 设计模式《实战组合模式》.md",
+                "2022-01-24-9-重学 Java 设计模式《实战装饰器模式》.md",
+                "2022-01-24-10-重学 Java 设计模式《实战外观模式》.md",
+                "2022-01-24-11-重学 Java 设计模式《实战享元模式》.md",
+                "2022-01-24-12-重学 Java 设计模式《实战代理模式》.md"
+            ]
+        },
+        {
+            title: "行为型模式",
+            collapsable: false,
+            sidebarDepth: 0,
+            children: [
+                "2022-01-24-13-重学 Java 设计模式《实战责任链模式》.md",
+                "2022-01-24-14-重学 Java 设计模式《实战命令模式》.md",
+                "2022-01-24-15-重学 Java 设计模式《实战迭代器模式》.md",
+                "2022-01-24-16-重学 Java 设计模式《实战中介者模式》.md",
+                "2022-01-24-17-重学 Java 设计模式《实战备忘录模式》.md",
+                "2022-01-24-18-重学 Java 设计模式《实战观察者模式》.md",
+                "2022-01-24-19-重学 Java 设计模式《实战状态模式》.md",
+                "2022-01-24-20-重学 Java 设计模式《实战策略模式》.md",
+                "2022-01-24-21-重学 Java 设计模式《实战模板模式》.md",
+                "2022-01-24-22-重学 Java 设计模式《实战访问者模式》.md"
             ]
         }
     ]
