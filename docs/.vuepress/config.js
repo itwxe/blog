@@ -302,7 +302,8 @@ function getNavStudyNotesMySQL() {
             children: [
                 "2022-01-03-深入理解MySQL索引底层数据结构.md",
                 "2022-01-18-MySQL体系结构概览.md",
-                "2022-01-20-Explain执行计划详解.md"
+                "2022-01-20-Explain执行计划详解.md",
+                "2022-02-12-MySQL再深入执行计划之trace工具.md"
             ]
         }
     ]
