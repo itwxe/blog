@@ -199,7 +199,7 @@ mysql> SELECT * FROM information_schema.OPTIMIZER_TRACE;
                         ] /* ranges */,
                         "index_dives_for_eq_ranges": true,
                         "rowid_ordered": false, -- 使用该索引获取的记录是否按照主键排序
-                        "using_mrr": false,  -- 是否使用mrr，mrr即
+                        "using_mrr": false,  -- 是否使用mrr
                         "index_only": false,  -- 是否使用覆盖索引
                         "rows": 1,  -- 索引扫描行数，也是个预估值
                         "cost": 2.21,  -- 索引使用成本
