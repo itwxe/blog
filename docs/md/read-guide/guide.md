@@ -7,7 +7,7 @@ permalink: '/posts/guide.html'
 
 > 各位小伙伴好，我是IT王小二，Java程序猿一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。
 
-## 又...双...叒...博客换皮（2021-12-26）
+## 一、又...双...叒...博客换皮（2021-12-26）
 
 - 小二：”我又...双...叒...一次折腾博客框架了，小伙伴们。“
 - 小伙伴：”小二你几个月前不是说过的一句话吗？”
@@ -29,13 +29,34 @@ permalink: '/posts/guide.html'
 
 Hexo 迁移到 VuePress 碰到了挺多坑，不过好在解决了，正式上线，哈哈哈~
 
-## 本站导航
+## 二、本站导航
 
-页面点点菜单就好了，现在内容还不多，小二以后来填坑...
+**专题归档**
 
-## 转载分享
+- [MySQL](https://itwxe.com/posts/94e3caef.html)
+- [Redis](https://itwxe.com/posts/6a343b7f.html)
+- [JVM](https://itwxe.com/posts/bde7ce51.html)
+- [并发编程](https://itwxe.com/posts/6544e59d.html)
+- [ZooKeeper](https://itwxe.com/posts/8c686403.html)
+- [消息中间件](https://itwxe.com/posts/bae9a0d2.html)
+- [Nginx](https://itwxe.com/posts/4c06301f.html)
+- [Docker](https://itwxe.com/posts/53aa5457.html)
+- [设计模式](https://itwxe.com/posts/9d8a6f49.html)
 
-建立本项目的初衷是基于小二在个人学习与工作中对相关技术栈的总结记录，在这里也希望能帮助一些在学习过程中遇到问题的小伙伴。
+**源码系列**
+
+- [MyBatis](https://itwxe.com/posts/503d81e0.html)
+
+**部署系列**
+
+- [软件安装](https://itwxe.com/posts/60ee814a.html)
+- [网站相关](https://itwxe.com/posts/6fe8f0c.html)
+
+小二的其他平台链接：[掘金](https://juejin.cn/user/2225067267470023/posts)、[CSDN](https://blog.csdn.net/qq_42349306?type=blog)、[博客园](https://www.cnblogs.com/itwxe)，能给小二点个免费的赞就更好啦😊
+
+## 三、转载分享
+
+建立本项目的初衷是基于小二在个人学习与工作中对相关技术栈的总结记录，在这里也希望能帮助一些在学习过程中遇到问题的小伙伴，如果能来个 star 就更好了。
 
 文章遵循 [署名-非商业性使用-禁止演绎 4.0 国际](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh) 进行许可，除特殊声明外皆为原创，转载请在文章页面明显位置给出作者与原文链接。如果您需要转载本仓库的一些文章到自己的博客，请按照以下格式注明出处，谢谢合作。
 
@@ -44,15 +65,15 @@ Hexo 迁移到 VuePress 碰到了挺多坑，不过好在解决了，正式上�
 原文出处：https://itwxe.com
 ```
 
-## 联系方式
+## 四、联系方式
 
 邮箱：[itwxe@qq.com](mailto:itwxe@qq.com)
 
 微信公众号：IT王小二
 
-![IT王小二](https://itwxe.com/images/system/qrcode_avatar.png)
+<img src="https://itwxe.com/images/system/qrcode_avatar.png" width="260" heigit="260"/>
 
-## 最后
+## 五、最后
 
 如果您发现文章中的不足或错误之处，欢迎在 issues 中提出。
 

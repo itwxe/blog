@@ -154,7 +154,7 @@ module.exports = {
                         text: '快速开始', link: '/md/read-guide/guide.md'
                     },
                     {
-                        text: '专题笔记',
+                        text: '专题归档',
                         items: [
                             {
                                 text: 'MySQL',
