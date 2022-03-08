@@ -304,7 +304,8 @@ function getNavStudyNotesMySQL() {
                 "2022-01-18-MySQL体系结构概览.md",
                 "2022-01-20-Explain执行计划详解.md",
                 "2022-02-12-MySQL再深入执行计划之trace工具.md",
-                "2022-02-13-SQL性能优化技巧.md"
+                "2022-02-13-SQL性能优化技巧.md",
+                "2022-03-08-MySQL性能优化之索引设计.md"
             ]
         }
     ]
