@@ -1,6 +1,8 @@
 ---
 title: 快速开始
 permalink: '/posts/guide.html'
+date: 2021-12-26 00:00:00
+updated: 2022-02-23 00:00:00
 ---
 
 # 快速开始

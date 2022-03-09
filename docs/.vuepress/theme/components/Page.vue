@@ -76,7 +76,13 @@ export default {
 
     lastUpdated () {
       if(this.$page.lastUpdated){
-        return this.$page.lastUpdated.split(" ")[0]
+        // 获取文章frontmatter中的更新时间updated作为最后更新时间
+        return this.$frontmatter.updated.split("T")[0]
+
+        // 获取提交文章到git的提交时间作为最后更新时间
+        // let time = this.$page.lastUpdated.replace(/\//g, ':').replace(',', '').replace(' ', ':').split(':')
+        // return time[2] + "-" + time[0] + "-" + time[1]
+        // return this.$page.lastUpdated.split(" ")[0]
       }
       return this.$page.lastUpdated
     },
