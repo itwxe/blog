@@ -103,8 +103,10 @@ module.exports = {
             exclude: ["/404.html"],
             // 简单修复非IDE环境下 yarn build 后 vuepress-plugin-sitemap 插件 RangeError: Invalid time value 的错误，修复后IDE环境下sitemap.xml日期异常
             dateFormatter: time => {
-                time = time.replace(/-/g,':').replace(' ',':').split(':')
-                return time[0] + "-" + time[1] + "-" + time[2]
+                console.log('time: ' + time);
+                time = time.replace(/\//g, ':').replace(',', '').replace(' ', ':').split(':')
+                console.log("return time: " + time[2] + "-" + time[0] + "-" + time[1])
+                return time[2] + "-" + time[0] + "-" + time[1]
             },
             changefreq: 'weekly'
         }],
