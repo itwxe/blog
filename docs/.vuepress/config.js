@@ -33,7 +33,7 @@ module.exports = {
         "/": {
             lang: "zh-CN",
             title: "IT王小二",
-            description: "万物之始, 大道至简, 衍化至繁"
+            description: "一枚Java程序猿的知识库"
         }
     },
     head: [
@@ -47,7 +47,7 @@ module.exports = {
         ["meta", {"http-equiv": "Expires", content: "0"}],
         ["meta", {
             name: "keywords",
-            content: "IT王小二"
+            content: "IT王小二, itwxe, Java, 并发编程, MySQL, Spring, 重学设计模式, 中间件"
         }],
         ["meta", {name: "apple-mobile-web-app-capable", content: "yes"}],
         ['script',
