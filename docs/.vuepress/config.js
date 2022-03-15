@@ -78,6 +78,12 @@ module.exports = {
         ]
     ],
     plugins: [
+        ['@vuepress/search', {
+            // 默认false
+            search: true,
+            // 默认是5
+            searchMaxSuggestions: 10
+        }],
         // ['@vuepress/back-to-top', true], replaced with inject page-sidebar
         ['@vuepress/medium-zoom', {
             selector: 'img:not(.nozoom)',
@@ -307,7 +313,8 @@ function getNavStudyNotesMySQL() {
                 "2022-01-20-Explain执行计划详解.md",
                 "2022-02-12-MySQL再深入执行计划之trace工具.md",
                 "2022-02-13-SQL性能优化技巧.md",
-                "2022-03-08-MySQL性能优化之索引设计.md"
+                "2022-03-08-MySQL性能优化之索引设计.md",
+                "2022-03-15-MySQL事务和锁.md",
             ]
         }
     ]
