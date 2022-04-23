@@ -69,12 +69,6 @@ export default {
             linkMode: 0,
             list: [
               {
-                title: 'CDSN',
-                img: '/_images/tool-logo/csdn.gif',
-                des: '中国专业IT社区CSDN',
-                url: 'http://www.csdn.net/'
-              },
-              {
                 title: '博客园',
                 img: '/_images/tool-logo/cnblog.gif',
                 des: '开发者的网上家园',

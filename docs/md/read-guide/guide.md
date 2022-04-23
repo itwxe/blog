@@ -54,7 +54,7 @@ Hexo 迁移到 VuePress 碰到了挺多坑，不过好在解决了，正式上�
 - [软件安装](https://itwxe.com/posts/60ee814a.html)
 - [网站相关](https://itwxe.com/posts/6fe8f0c.html)
 
-小二的其他平台链接：[掘金](https://juejin.cn/user/2225067267470023/posts)、[CSDN](https://blog.csdn.net/qq_42349306?type=blog)、[博客园](https://www.cnblogs.com/itwxe)，能给小二点个免费的赞就更好啦😊
+小二的其他平台链接：[掘金](https://juejin.cn/user/2225067267470023/posts)、[博客园](https://www.cnblogs.com/itwxe)，能给小二点个免费的赞就更好啦😊
 
 ## 三、转载分享
 

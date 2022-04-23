@@ -243,10 +243,6 @@ module.exports = {
                                         link: 'https://juejin.cn/user/2225067267470023/posts'
                                     },
                                     {
-                                        text: 'CSDN',
-                                        link: 'https://blog.csdn.net/qq_42349306?type=blog'
-                                    },
-                                    {
                                         text: '博客园',
                                         link: 'https://www.cnblogs.com/itwxe'
                                     },
