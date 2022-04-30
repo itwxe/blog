@@ -31,7 +31,7 @@ updated: 2020-05-25 00:00:00
 
 **流程描述：**
 
-![ZooKeeper分布式锁1](https://images.itwxe.com/images/2021/08/05/0ac5edccf443c.png)
+![ZooKeeper分布式锁1](https://img.itwxe.com/i/2021/08/0ac5edccf443c.png)
 
 **具体代码：**
 
@@ -251,7 +251,7 @@ public class OrderService {
 
 **流程描述：**
 
-![ZooKeeper分布式锁2](https://images.itwxe.com/images/2021/08/05/9e74b67f1bd7d.png)
+![ZooKeeper分布式锁2](https://img.itwxe.com/i/2021/08/9e74b67f1bd7d.png)
 
 **具体代码**
 

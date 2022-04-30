@@ -65,7 +65,7 @@ PuTTy 可以说除了不支持选项卡模式以外，几乎非常完美了，�
 
 首先配置都得先加载对应服务器，例如选中后 Saved Sessions 的名称如果没有显示，那么需要 **点击 Load 再开始配置，配置完之后 Save 才能生效。** 如下图：
 
-![配置基础](https://images.itwxe.com/images/2021/08/05/cc4653efb801b.png)
+![配置基础](https://img.itwxe.com/i/2021/08/cc4653efb801b.png)
 
 1、Window
 
@@ -73,25 +73,25 @@ Columns 和 Rows 调整启动的行列数（设置之后 Terminal 窗口大小�
 
 Lines of scrollback 回滚行数。建议设置的大一点。
 
-![窗口设置](https://images.itwxe.com/images/2021/08/05/0ec9a843b707c.png)
+![窗口设置](https://img.itwxe.com/i/2021/08/0ec9a843b707c.png)
 
 2、Window -> Appearance
 
 Font setting -> Change 调整字体。
 
-![字体设置](https://images.itwxe.com/images/2021/08/05/572aa724eb12b.png)
+![字体设置](https://img.itwxe.com/i/2021/08/572aa724eb12b.png)
 
 3、Connection -> keepalives: 60
 
 长时间不操作断开连接，设置 keepalive 保持连接，比如设置为60秒发送一个空数据包保持连接。
 
-![keepalive](https://images.itwxe.com/images/2021/08/05/260597cb4c03f.png)
+![keepalive](https://img.itwxe.com/i/2021/08/260597cb4c03f.png)
 
 4、Connection -> Data
 
 Auto-login username 可填写登录用户名。省去每次需要填写Username的麻烦。
 
-![默认用户名](https://images.itwxe.com/images/2021/08/05/25e5cf7ef1ce0.png)
+![默认用户名](https://img.itwxe.com/i/2021/08/25e5cf7ef1ce0.png)
 
 这些配置完之后就可以，Session -> Save，配置就生效了。
 
@@ -154,7 +154,7 @@ Windows Registry Editor Version 5.00
 
 再次打开 VM11 看看效果，效果如下。
 
-![配色效果图](https://images.itwxe.com/images/2021/08/05/d4e27728b673d.png)
+![配色效果图](https://img.itwxe.com/i/2021/08/d4e27728b673d.png)
 
 ### 3. 使用密钥登录
 
@@ -162,13 +162,13 @@ PuTTY 出于安全性考虑不支持保存密码登录，那为了不输入冗�
 
 1、点击 Genterate 生成密钥，选择算法默认 RSA 就可以了，至于各个算法有啥区别就不罗嗦了，生成的时候再进度条下方空白处随便晃几下，产生随机性的同时加快生成速度。
 
-![密钥开始生成](https://images.itwxe.com/images/2021/08/05/7cee98d453dae.png)
+![密钥开始生成](https://img.itwxe.com/i/2021/08/7cee98d453dae.png)
 
-![密钥生成中](https://images.itwxe.com/images/2021/08/05/b7993d7117de5.png)
+![密钥生成中](https://img.itwxe.com/i/2021/08/b7993d7117de5.png)
 
 2、密钥生成后保存复制公钥及保存私钥。
 
-![密钥生成完成](https://images.itwxe.com/images/2021/08/05/8332d31ff2cf2.png)
+![密钥生成完成](https://img.itwxe.com/i/2021/08/8332d31ff2cf2.png)
 
 公钥保存在服务器，连接远程主机，`vim ~/.ssh/authorized_keys`，将公钥复制进该文件，保存退出。
 
@@ -178,15 +178,15 @@ PuTTY 出于安全性考虑不支持保存密码登录，那为了不输入冗�
 
 首先你得通过 Connection -> Data 设置默认登录用户名。
 
-![默认用户名](https://images.itwxe.com/images/2021/08/05/25e5cf7ef1ce0.png)
+![默认用户名](https://img.itwxe.com/i/2021/08/25e5cf7ef1ce0.png)
 
 然后点击 SSH -> Auth -> Browse，选择保存的私钥位置。
 
-![选择私钥](https://images.itwxe.com/images/2021/08/05/c5bb84d0c2d59.png)
+![选择私钥](https://img.itwxe.com/i/2021/08/c5bb84d0c2d59.png)
 
 **最关键的一步**，一定不要忘了保存，特别是如果没有显示 HostName 和 Saved Sessions 一定要点击 load，再点击保存，不然设置不生效。
 
-![保存设置](https://images.itwxe.com/images/2021/08/05/be478da35f93d.png)
+![保存设置](https://img.itwxe.com/i/2021/08/be478da35f93d.png)
 
 保存好之后就可以看看是否可以正常使用密钥登录了。
 
@@ -194,10 +194,10 @@ PuTTY 出于安全性考虑不支持保存密码登录，那为了不输入冗�
 
 至于 WinSCP 默认支持中文的，配置也很简单，基本看到了中文就会用了，放一个图例：
 
-![WinSCP](https://images.itwxe.com/images/2021/08/05/163933d951151.png)
+![WinSCP](https://img.itwxe.com/i/2021/08/163933d951151.png)
 
 拖拽即可上传，这是单栏模式，也可以设置成类似 xftp 的双栏模式。
 
-![单栏WinSCP](https://images.itwxe.com/images/2021/08/05/ea72ac9c1eb95.png)
+![单栏WinSCP](https://img.itwxe.com/i/2021/08/ea72ac9c1eb95.png)
 
 > 都读到这里了，来个 **点赞、评论、关注、收藏** 吧！

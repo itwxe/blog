@@ -22,7 +22,7 @@ updated: 2019-11-11 00:00:00
 
 从 [MySQL官网](https://downloads.mysql.com/archives/community/) 下载，上传至 CentOS 系统 `/usr/local/` 目录下，当然你也可以使用 `wget` 命令直接下载至 CentOS，此处使用的 5.7.26 版本。
 
-![版本选择](https://images.itwxe.com/images/2021/08/05/2ec626c2281f9.png)
+![版本选择](https://img.itwxe.com/i/2021/08/2ec626c2281f9.png)
 
 ### 2. 检查是否存在自带mariadb
 

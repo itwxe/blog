@@ -37,7 +37,7 @@ chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
 
-![docker-compose-version](https://images.itwxe.com/images/2021/08/05/91b161f89cd98.png)
+![docker-compose-version](https://img.itwxe.com/i/2021/08/91b161f89cd98.png)
 
 ## 二、DockerCompose详解
 
@@ -229,10 +229,10 @@ services:
 docker-compose up -d
 ```
 
-![docker-compose启动服务](https://images.itwxe.com/images/2021/08/05/e92030dcbc14e.png)
+![docker-compose启动服务](https://img.itwxe.com/i/2021/08/e92030dcbc14e.png)
 
 可以看到服务都正常启动了，此时可以访问下项目，项目正常访问。
 
-![docker-compose启动一组服务](https://images.itwxe.com/images/2021/08/05/f64e83c61c679.png)
+![docker-compose启动一组服务](https://img.itwxe.com/i/2021/08/f64e83c61c679.png)
 
 > 都读到这里了，来个 **点赞、评论、关注、收藏** 吧！

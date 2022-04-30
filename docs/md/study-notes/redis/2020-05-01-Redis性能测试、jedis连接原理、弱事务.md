@@ -23,7 +23,7 @@ updated: 2020-05-01 00:00:00
 
 redis命令的生命周期：发送、排队、执行、返回。
 
-![Redis查询过程](https://images.itwxe.com/images/2021/08/05/75b9373a6dded.png)
+![Redis查询过程](https://img.itwxe.com/i/2021/08/75b9373a6dded.png)
 
 redis 的所有指令全部会存放到队列, 由单线程按顺序获取并执行指令。
 
@@ -246,11 +246,11 @@ mysql -uSunnyBear -p123456 sunny --default-character-set=utf8 --skip-column-name
 
 大多数情况下，我们都会通过请求-相应机制去操作redis。只用这种模式的一般的步骤是：先获得 jedis 实例，然后通过 jedis 的 get/put 方法与 redis 交互。由于 redis 是单线程的，下一次请求必须等待上一次请求执行完成后才能继续执行。
 
-![多次连接Redis](https://images.itwxe.com/images/2021/08/05/b48578bada29c.png)
+![多次连接Redis](https://img.itwxe.com/i/2021/08/b48578bada29c.png)
 
 然而批量操作下这样网络开销很大，导致速度慢，使用 Pipeline 模式，客户端可以一次性的发送多个命令，无需等待服务端返回。这样就大大的减少了网络往返时间，提高了系统性能。
 
-![连接一次操作多次](https://images.itwxe.com/images/2021/08/05/33c2d0449fd86.png)
+![连接一次操作多次](https://img.itwxe.com/i/2021/08/33c2d0449fd86.png)
 
 示例代码，初始化10000个key，批量删除5000个。
 
@@ -401,7 +401,7 @@ OK
 
 ### 4. watch让事务失效
 
-![watch让事务失效](https://images.itwxe.com/images/2021/08/05/f3e02389212b9.png)
+![watch让事务失效](https://img.itwxe.com/i/2021/08/f3e02389212b9.png)
 
 ## 三、补充点
 

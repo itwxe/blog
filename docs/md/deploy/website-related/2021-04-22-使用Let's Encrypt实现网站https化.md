@@ -71,7 +71,7 @@ acme.sh --issue -d img.itwxe.com -w /itwxe/blogSite/public
 
 生成成功之后的文件在 ` /root/.acme.sh/` 目录下，以域名为文件夹，SSL 证书就在这个目录下。
 
-![证书目录](https://images.itwxe.com/images/2021/08/05/a7973ce32d4d0.jpg)
+![证书目录](https://img.itwxe.com/i/2021/08/a7973ce32d4d0.jpg)
 
 ## 二、Nginx配置https
 
@@ -153,7 +153,7 @@ nginx -s reload
 
 验证之后可以看到网站小绿标已经加上了，证书查看也可以看到确实是三个月有效期。
 
-![ssl](https://images.itwxe.com/images/2021/08/05/fa7297b88d3c8.png)
+![ssl](https://img.itwxe.com/i/2021/08/fa7297b88d3c8.png)
 
 ## 三、自动续期
 

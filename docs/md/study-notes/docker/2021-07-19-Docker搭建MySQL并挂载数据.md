@@ -98,6 +98,6 @@ docker stop mysql && docker rm mysql
 
 使用上面的命令重新创建容器，查看数据是否正常，可以看到数据正常挂载查询，此处演示的数据正常挂载保存宿主机。
 
-![挂载数据生效结果](https://images.itwxe.com/images/2021/08/05/45e38dc2ce42e.png)
+![挂载数据生效结果](https://img.itwxe.com/i/2021/08/45e38dc2ce42e.png)
 
 > 都读到这里了，来个 **点赞、评论、关注、收藏** 吧！

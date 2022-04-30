@@ -226,7 +226,7 @@ ENTRYPOINT ["java","-jar","docker-sunny.jar"]
 
 3、注意目录结构
 
-![DockerFile目录结构](https://images.itwxe.com/images/2021/08/05/ded31b3a7d322.png)
+![DockerFile目录结构](https://img.itwxe.com/i/2021/08/ded31b3a7d322.png)
 
 4、编译并生成镜像
 
@@ -238,7 +238,7 @@ docker build -t itwxe/sunny-admin .
 
 打包过程如下，可以看到镜像创建成功。
 
-![编译并生成镜像](https://images.itwxe.com/images/2021/08/05/f8b06839cacc6.png)
+![编译并生成镜像](https://img.itwxe.com/i/2021/08/f8b06839cacc6.png)
 
 5、创建容器运行看下，项目是否正常。
 
@@ -246,7 +246,7 @@ docker build -t itwxe/sunny-admin .
 docker run -d --name sunny -p 9002:9002 itwxe/sunny-admin
 ```
 
-![dockerfile项目运行结果](https://images.itwxe.com/images/2021/08/05/71c2112e3e05f.png)
+![dockerfile项目运行结果](https://img.itwxe.com/i/2021/08/71c2112e3e05f.png)
 
 可以看到项目正常运行，这是我自己写的一个基础应用框架，该有的基础都有了，就差业务开发了，以后准备写一个系列搭建教程，找个好一点的方向。
 

@@ -25,7 +25,7 @@ updated: 2020-11-03 00:00:00
 
 tomcat 高可用的思路是在 tomcat 集群前面加一层负载nginx，如下图：
 
-![传统高可用](https://images.itwxe.com/images/2021/08/05/72f8a10272cf8.png)
+![传统高可用](https://img.itwxe.com/i/2021/08/72f8a10272cf8.png)
 
 但是这种结构一旦 nginx 挂掉了，那么整个服务就瘫痪了。
 
@@ -37,13 +37,13 @@ tomcat 高可用的思路是在 tomcat 集群前面加一层负载nginx，如下
 
 LVS 个人理解就是利用多个物理机集群虚拟出一个虚拟ip（Virtual Server IP，简称VIP），虚拟ip不是实际存在的物理机，所以虚拟ip不会挂，而 LVS 的实现 Linux 内核已经帮助我们实现了，结构如下图：
 
-![LVS示意图](https://images.itwxe.com/images/2021/08/05/6c01915ac98f2.png)
+![LVS示意图](https://img.itwxe.com/i/2021/08/6c01915ac98f2.png)
 
 ### 2. nginx+keepalived
 
 在传统高可用的基础上，利用多台服务器集群借助 keepavlied 管理 LVS 虚拟出一个虚拟ip，只要两台 nginx 服务器不宕机那么服务就不会瘫痪，如下图：
 
-![nginx+keepalived](https://images.itwxe.com/images/2021/08/05/bc04a63270eb7.png)
+![nginx+keepalived](https://img.itwxe.com/i/2021/08/bc04a63270eb7.png)
 
 ## 三、环境说明
 
@@ -60,7 +60,7 @@ LVS 个人理解就是利用多个物理机集群虚拟出一个虚拟ip（Virtu
 
 1、修改 selinux，关闭 SELINUX，打开 `vim /etc/sysconfig/selinux`，设置 `SELINUX=disabled`，我 VMWare 里面安装的 Linux 和腾讯云的云服务器都默认关闭了，如下图：
 
-![关闭selinux](https://images.itwxe.com/images/2021/08/05/a39d908e05054.png)
+![关闭selinux](https://img.itwxe.com/i/2021/08/a39d908e05054.png)
 
 2、安装需要的依赖包。
 
@@ -167,9 +167,9 @@ vrrp_instance VI_1 {
 
 2、使用 `ip addr` 查看效果，正常的结果是虚拟ip位于 192.168.5.11 这台机器上，因为其配置的优先级更高。可是...结果...不出意外的翻车了，哈哈哈！出现的问题是两个机器出现了双VIP，翻车截图如下：
 
-![VM11ipaddr](https://images.itwxe.com/images/2021/08/05/9bad3a54b57c2.png)
+![VM11ipaddr](https://img.itwxe.com/i/2021/08/9bad3a54b57c2.png)
 
-![VM12ipaddr](https://images.itwxe.com/images/2021/08/05/ff5e1e0596402.png)
+![VM12ipaddr](https://img.itwxe.com/i/2021/08/ff5e1e0596402.png)
 
 个人猜测是防火墙的原因，于是一波 Google 大法，果不其然，找到了原因：防火墙将 vrrp 广播给拦截了，所以导致 BACKUP 接收不到 MASTER 的广播。
 
@@ -179,17 +179,17 @@ vrrp_instance VI_1 {
 
 执行 `tcpdump -i ens33 vrrp -n` 命令查看情况，发现两台机器都在广播，正常情况 BACKUP 不应该在广播的。
 
-![抓包异常情况](https://images.itwxe.com/images/2021/08/05/e41d619a81d81.png)
+![抓包异常情况](https://img.itwxe.com/i/2021/08/e41d619a81d81.png)
 
 为了验证一下，把两台机器的防火墙全部关闭，命令：`systemctl stop firewalld.service`，发现情况正常了。
 
-![抓包正常情况](https://images.itwxe.com/images/2021/08/05/4b53d09e39dd7.png)
+![抓包正常情况](https://img.itwxe.com/i/2021/08/4b53d09e39dd7.png)
 
 `ip addr` 查看，发现配置成功了。
 
-![master_success](https://images.itwxe.com/images/2021/08/05/ada2ce635290f.png)
+![master_success](https://img.itwxe.com/i/2021/08/ada2ce635290f.png)
 
-![backup_success](https://images.itwxe.com/images/2021/08/05/8c27c1dbe827e.png)
+![backup_success](https://img.itwxe.com/i/2021/08/8c27c1dbe827e.png)
 
 **不关闭防火墙放行 vrrp 广播**
 
@@ -204,11 +204,11 @@ firewall-cmd --reload
 
 3、配置正常了，那么就需要检验一下当 MASTER 主机宕机之后虚拟ip是否会自动漂移到 BACKUP 备份机器了，当然为了模拟场景我只需要把 keepalived 服务干掉就可以了。
 
-![kill_master](https://images.itwxe.com/images/2021/08/05/9a9dcea8d7315.png)
+![kill_master](https://img.itwxe.com/i/2021/08/9a9dcea8d7315.png)
 
 可以看到 BACKUP 备份机已经接管了。
 
-![BACKUP_MASTER](https://images.itwxe.com/images/2021/08/05/302d05bccfe2d.png)
+![BACKUP_MASTER](https://img.itwxe.com/i/2021/08/302d05bccfe2d.png)
 
 而当 MASTER 主机重启之后，MASTER 主机又会抢回虚拟ip的控制权。
 
@@ -247,7 +247,7 @@ fi
 
 增加的配置如图：
 
-![keepalived心跳检测nginx](https://images.itwxe.com/images/2021/08/05/bfefc59421b74.png)
+![keepalived心跳检测nginx](https://img.itwxe.com/i/2021/08/bfefc59421b74.png)
 
 ```
 vrrp_script check_nginx {
@@ -274,7 +274,7 @@ killall nginx
 /usr/local/keepalived/sbin/keepalived
 ```
 
-![打不死的nginx](https://images.itwxe.com/images/2021/08/05/2a3334fbba5fa.png)
+![打不死的nginx](https://img.itwxe.com/i/2021/08/2a3334fbba5fa.png)
 
 同理，BACKUP 备份机也同样增加相同的心跳检测脚本和配置即可 。
 

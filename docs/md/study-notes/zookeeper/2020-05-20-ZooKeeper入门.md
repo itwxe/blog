@@ -234,7 +234,7 @@ create -e -s /testSunnyBear ephemeralNodeTest
 
 ###  4. ZooKeeper节点状态属性
 
-![ZooKeeper节点状态](https://images.itwxe.com/images/2021/08/05/889a47a48ef64.png)
+![ZooKeeper节点状态](https://img.itwxe.com/i/2021/08/889a47a48ef64.png)
 
 | 属性           | 数据结构 | 描述                                                         |
 | -------------- | -------- | ------------------------------------------------------------ |

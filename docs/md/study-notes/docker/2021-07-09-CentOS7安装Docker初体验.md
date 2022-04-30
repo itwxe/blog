@@ -55,7 +55,7 @@ sudo systemctl restart docker
 
 当然你也可以配置阿里云镜像加速，阿里云为每个用户设定专属加速链接，注册阿里云后在控制台找到 容器镜像服务（阿里云容器镜像服务 -> 镜像加速器）
 
-![配置阿里云镜像加速器](https://images.itwxe.com/images/2021/08/05/1e8a0390e0d7f.png)
+![配置阿里云镜像加速器](https://img.itwxe.com/i/2021/08/1e8a0390e0d7f.png)
 
 5、启动 Docker。
 
@@ -63,7 +63,7 @@ sudo systemctl restart docker
 
 6、`docker run hello-world` 测试一下 Docker 是否可以正常启动容器。
 
-![hellor-world运行结果](https://images.itwxe.com/images/2021/08/05/012a77a71b75b.png)
+![hellor-world运行结果](https://img.itwxe.com/i/2021/08/012a77a71b75b.png)
 
 ## 二、一些命令
 

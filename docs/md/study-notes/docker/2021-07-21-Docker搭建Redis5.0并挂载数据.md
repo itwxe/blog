@@ -29,7 +29,7 @@ redis:5.0.8 redis-server --appendonly yes
 
 在 [Docker Hub](https://registry.hub.docker.com/_/redis) 中提到，需要自定义 redis.conf 使用 DockerFile 构建镜像。
 
-![docker使用自定义配置那件构建redis镜像](https://images.itwxe.com/images/2021/08/05/49d0f44bb3794.png)
+![docker使用自定义配置那件构建redis镜像](https://img.itwxe.com/i/2021/08/49d0f44bb3794.png)
 
 ## 二、通过DockerFile构建镜像，指定配置文件启动
 
@@ -77,7 +77,7 @@ CMD ["redis-server", "/usr/local/etc/redis/redis.conf"]
 docker build -t itwxe/redis:5.0.8 .
 ```
 
-![构建自定义配置redis镜像](https://images.itwxe.com/images/2021/08/05/fe5afbb1f14dd.png)
+![构建自定义配置redis镜像](https://img.itwxe.com/i/2021/08/fe5afbb1f14dd.png)
 
 5、启动构建的镜像，并挂载数据。
 
@@ -89,10 +89,10 @@ itwxe/redis:5.0.8
 
 可以看到数据正常挂载了。
 
-![自定义redis镜像自动](https://images.itwxe.com/images/2021/08/05/6b19d8590d26a.png)
+![自定义redis镜像自动](https://img.itwxe.com/i/2021/08/6b19d8590d26a.png)
 
 同时可以测试下密码也可以正常连接。
 
-![自定义redis容器连接](https://images.itwxe.com/images/2021/08/05/32e0af2744c31.png)
+![自定义redis容器连接](https://img.itwxe.com/i/2021/08/32e0af2744c31.png)
 
 > 都读到这里了，来个 **点赞、评论、关注、收藏** 吧！

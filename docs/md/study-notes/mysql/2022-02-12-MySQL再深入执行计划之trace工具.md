@@ -85,7 +85,7 @@ explain select * from employees where name > 'itwxe' order by position;
 explain select * from employees where name > 'wei' order by position;
 ```
 
-![explain_two_sql](https://images.itwxe.com/images/2022/02/62a6e39bc66a9.png)
+![explain_two_sql](https://img.itwxe.com/i/2022/02/62a6e39bc66a9.png)
 
 可以看到第一条 SQL 中 `possible_keys` 有可以使用的索引 `idx_name_age_position` ，但是最后实际上 MySQL 没有使用 `idx_name_age_position` ，而是使用了全表扫描；而第二条 SQL 中使用到了 `idx_name_age_position` 中的 name 列，这是为什么呢？
 
