@@ -588,7 +588,8 @@ function getNavDeployWebsiteRelated() {
             collapsable: false,
             sidebarDepth: 0,
             children: [
-                "2021-08-12-Typora+PicGo+LskyPro打造舒适写作环境.md"
+                "2021-08-12-Typora+PicGo+LskyPro打造舒适写作环境.md",
+                "2022-04-30-Docker安装LskyPro2.0升级过程.md"
             ]
         },
         {
