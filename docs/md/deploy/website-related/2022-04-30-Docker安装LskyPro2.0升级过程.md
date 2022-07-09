@@ -9,6 +9,10 @@ updated: 2022-04-30 00:00:00
 
 # Docker安装LskyPro2.0升级过程
 
+> 作者：IT王小二
+>
+> 博客：[https://itwxe.com](https://itwxe.com/)
+
 小二原来写过使用 [Typora+PicGo+LskyPro打造舒适写作环境](https://itwxe.com/posts/6eb96d2e.html)，上礼拜偶然发现LskyPro已经发布2.0版本，作为一个爱折腾的人，当然得耍耍，不过看到[LskyPro官方文档](https://docs.lsky.pro/)写到...
 
 ::: warning 升级指南 > 迁移之前你需要知道的事
