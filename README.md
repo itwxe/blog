@@ -4,34 +4,15 @@
 
 ## 博客历程
 
-- 2019年 5月，`uukongjian.com`域名注册完成。
+- 2019年 5月，`uukongjian.com`域名注册完成，笔名`SunnyBear`。
 - 2019年 7月，域名备案完成，使用`Hexo`搭建博客完成上线。
-- 2021年 4月，新域名`itwxe.com`注册成功，同时备案完成。
+- 2021年 4月，新域名`itwxe.com`注册成功，笔名`IT王小二`，同时备案完成。
 - 2021年12月，博客框架由`Hexo`重构为`VuePress1.x`版本。
 - 2022年 7月，博客框架升级`VuePress2.x-beta`版本。
 
 ## 本站导航
 
-**学习笔记**
-
-- [MySQL](https://itwxe.com/study-notes/mysql/94e3caef.html)
-- [Redis](https://itwxe.com/study-notes/redis/6a343b7f.html)
-- [JVM](https://itwxe.com/study-notes/jvm/bde7ce51.html)
-- [并发编程](https://itwxe.com/study-notes/concurrent/6544e59d.html)
-- [ZooKeeper](https://itwxe.com/study-notes/zookeeper/8c686403.html)
-- [消息中间件](https://itwxe.com/study-notes/message-oriented-middleware/rabbitmq/c5ec20ad.html)
-- [Nginx](https://itwxe.com/study-notes/nginx/4c06301f.html)
-- [Docker](https://itwxe.com/study-notes/docker/53aa5457.html)
-- [设计模式](https://itwxe.com/study-notes/design-pattern/9d8a6f49.html)
-
-**源码系列**
-
-- [MyBatis](https://itwxe.com/source-code/mybatis/503d81e0.html)
-
-**部署系列**
-
-- [软件安装](https://itwxe.com/software-installation/1334c88e.html)
-- [网站相关](https://itwxe.com/website-related/6fe8f0c.html)
+![本站导航](https://itwxe.com/images/system/本站导航.svg)
 
 小二的其他平台链接：[掘金](https://juejin.cn/user/2225067267470023/posts)、[博客园](https://www.cnblogs.com/itwxe)，能给小二点个免费的赞就更好啦😊
 
