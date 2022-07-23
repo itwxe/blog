@@ -1,0 +1,12 @@
+// 主要内容宽度
+$content-width: 960px;
+
+// 字体
+@font-face {
+  font-family: "JetBrainsMonoNL-Regular";
+  src: url("/font/JetBrainsMonoNL-Regular.woff2");
+}
+// 正文字体
+$font-family: '"JetBrainsMonoNL-Regular", "PingFang SC", "Microsoft Yahei"';
+// 代码块字体
+$font-family-code: "JetBrainsMonoNL-Regular";
