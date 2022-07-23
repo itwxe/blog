@@ -79,7 +79,7 @@ export default hopeTheme({
   // 是否默认显示页脚
   displayFooter: true,
   // 项目所在分支
-  docsBranch: "main",
+  docsBranch: "master",
   // 项目文档目录
   docsDir: "docs",
 
