@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme";
+import {searchPlugin} from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   lang: "zh-CN",
@@ -13,6 +14,21 @@ export default defineUserConfig({
     },
     linkify: false,
   },
-
+  plugins: [
+      searchPlugin({
+          locales: {
+              "/": {
+                  placeholder: '搜索',
+              },
+          },
+          maxSuggestions: 10,
+          // 排除首页
+          isSearchable: (page) => page.path !== "/",
+          // 热键s打开搜索框输入搜索
+          hotKeys: ["s", "/"],
+          // 用于在页面的搜索索引中添加额外字段
+          getExtraFields: () => [],
+      }),
+  ],
   theme,
 });
