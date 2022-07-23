@@ -1,6 +1,6 @@
-import { sidebar } from "vuepress-theme-hope";
+import {sidebar} from "vuepress-theme-hope";
 
-export default sidebar ({
+export default sidebar({
     "/study-notes/mysql/": [
         {
             text: "MySQL",
