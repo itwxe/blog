@@ -1,17 +1,30 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme";
 import {searchPlugin} from "@vuepress/plugin-search";
+import * as path from "path";
 
 export default defineUserConfig({
     lang: "zh-CN",
     title: "IT王小二",
     description: "Java程序猿一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。",
     base: "/",
-    //指定 vuepress build 的输出目录
+    // 指定 vuepress build 的输出目录
     dest: "./dist",
+    // 是否开启默认预加载 js
+    shouldPrefetch: (file, type) => false,
     head: [
         // meta
+        ["meta", { name: "robots", content: "all" }],
         ["meta", {name: "author", content: "IT王小二"}],
+        [
+            "meta",
+            {
+                "http-equiv": "Cache-Control",
+                content: "no-cache, no-store, must-revalidate",
+            },
+        ],
+        ["meta", { "http-equiv": "Pragma", content: "no-cache" }],
+        ["meta", { "http-equiv": "Expires", content: "0" }],
         [
             "meta",
             {
@@ -26,12 +39,12 @@ export default defineUserConfig({
             "script",
             {},
             `var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?6471cf570d32477fe3b1cc6b9b649d98";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-      })();`,
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?6471cf570d32477fe3b1cc6b9b649d98";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+            })();`,
         ],
     ],
     markdown: {
@@ -39,7 +52,6 @@ export default defineUserConfig({
             // 代码块禁用行号
             lineNumbers: false
         },
-        linkify: false,
     },
     plugins: [
         searchPlugin({
@@ -57,5 +69,6 @@ export default defineUserConfig({
             getExtraFields: () => [],
         }),
     ],
+    clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
     theme,
 });
