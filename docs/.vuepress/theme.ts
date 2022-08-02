@@ -72,7 +72,11 @@ export default hopeTheme({
     // 页脚信息，可以输入HTMLString
     footer:
         "<a target=\"_blank\" rel=\"external nofollow noopener noreferrer\" href=\"https://beian.miit.gov.cn/\">" +
-        "赣ICP备2021001966号-2" +
+            "赣ICP备2021001966号-2" +
+        "</a>" +
+        "&nbsp;|&nbsp;" +
+        "<a href=\"http://www.mmtrix.com\">" +
+            "<img alt=\"mmtrix\" src=\"http://s3.mmtrix.com/league/220-90.png\" width='55' height='22.5'/>" +
         "</a>",
     // 页脚版权信息
     copyright: "Copyright © 2019-present IT王小二",
