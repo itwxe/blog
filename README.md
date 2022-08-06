@@ -2,14 +2,6 @@
 
 > 各位小伙伴好，我是IT王小二，Java程序猿一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。
 
-## 博客历程
-
-- 2019年 5月，`uukongjian.com`域名注册完成，笔名`SunnyBear`。
-- 2019年 7月，域名备案完成，使用`Hexo`搭建博客完成上线。
-- 2021年 4月，新域名`itwxe.com`注册成功，笔名`IT王小二`，同时备案完成。
-- 2021年12月，博客框架由`Hexo`重构为`VuePress1.x`版本。
-- 2022年 7月，博客框架升级`VuePress2.x-beta`版本。
-
 ## 本站导航
 
 ![本站导航](https://itwxe.com/images/system/本站导航.svg)
@@ -34,6 +26,14 @@
 微信公众号：IT王小二
 
 <img src="https://itwxe.com/images/system/qrcode_avatar.png" width="260" heigit="260"/>
+
+## 博客历程
+
+- 2019年 5月，`uukongjian.com`域名注册完成。
+- 2019年 7月，域名备案完成，使用`Hexo`搭建博客完成上线。
+- 2021年 4月，新域名`itwxe.com`注册成功，同时备案完成。
+- 2021年12月，博客框架由`Hexo`重构为`VuePress1.x`版本。
+- 2022年 7月，博客框架升级`VuePress2.x-beta`版本。
 
 ## 最后
 
