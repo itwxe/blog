@@ -69,6 +69,6 @@ export default defineUserConfig({
             getExtraFields: () => [],
         }),
     ],
-    clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
+    // clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
     theme,
 });
