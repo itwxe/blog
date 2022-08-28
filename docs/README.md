@@ -2,17 +2,17 @@
 home: true
 icon: home
 heroImage: /favicon.ico
-heroText: IT王小二
+heroText: IT王小二の技术小站
 tagline: Java程序猿一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。
 actions:
   - text: 快速开始 →
-    link: /study-notes/mysql/94e3caef.html
+    link: /java-notes/concurrent/6544e59d.html
     type: primary
 ---
 
 ## 本站导航
 
-![本站导航](/images/system/本站导航.svg)
+![本站导航](https://itwxe.com/images/system/本站导航.svg)
 
 小二的其他平台链接：[掘金](https://juejin.cn/user/2225067267470023/posts)、[博客园](https://www.cnblogs.com/itwxe)，能给小二点个免费的赞就更好啦😊
 
@@ -37,9 +37,9 @@ actions:
 
 ## 博客历程
 
-- 2019年 5月，`uukongjian.com`域名注册完成。
-- 2019年 7月，域名备案完成，使用`Hexo`搭建博客完成上线。
-- 2021年 4月，新域名`itwxe.com`注册成功，同时备案完成。
+- 2019年 5月，`uukongjian.com`域名注册完成，笔名SunnyBear。
+- 2019年 7月，域名`uukongjian.com`备案完成，使用`Hexo`搭建博客完成上线。
+- 2021年 4月，新域名`itwxe.com`注册成功，笔名修改为`IT王小二`，同时备案完成。
 - 2021年12月，博客框架由`Hexo`重构为`VuePress1.x`版本。
 - 2022年 7月，博客框架升级`VuePress2.x-beta`版本。
 

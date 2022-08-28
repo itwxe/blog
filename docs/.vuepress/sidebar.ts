@@ -1,44 +1,7 @@
 import {sidebar} from "vuepress-theme-hope";
 
 export default sidebar({
-    "/study-notes/mysql/": [
-        {
-            text: "MySQL",
-            children: [
-                "01.深入理解MySQL索引底层数据结构.md",
-                "02.MySQL体系结构概览.md",
-                "03.Explain执行计划详解.md",
-                "04.MySQL再深入执行计划之trace工具.md",
-                "05.SQL性能优化技巧.md",
-                "06.MySQL性能优化之索引设计.md",
-                "07.MySQL事务和锁.md",
-            ]
-        },
-    ],
-    "/study-notes/redis/": [
-        {
-            text: "Redis",
-            children: [
-                "01.Redis入门.md",
-                "02.Redis常见应用场景.md",
-                "03.Redis性能测试、jedis连接原理、弱事务.md",
-                "04.Redis高可用.md",
-            ]
-        },
-    ],
-    "/study-notes/jvm/": [
-        {
-            text: "JVM",
-            children: [
-                "01.JVM组成结构.md",
-                "02.JVM中的对象.md",
-                "03.JVM垃圾回收算法和垃圾回收器.md",
-                "04.JVM的执行子系统.md",
-                "05.JVM性能优化.md",
-            ]
-        },
-    ],
-    "/study-notes/concurrent/": [
+    "/java-notes/concurrent/": [
         {
             text: "并发编程",
             children: [
@@ -53,51 +16,19 @@ export default sidebar({
             ]
         },
     ],
-    "/study-notes/zookeeper/": [
+    "/java-notes/jvm/": [
         {
-            text: "Zookeeper",
+            text: "JVM",
             children: [
-                "01.ZooKeeper入门.md",
-                "02.ZooKeeper Java客户端.md",
-                "03.ZooKeeper集群解析.md",
-                "04.ZooKeeper分布式锁的实现.md",
+                "01.JVM组成结构.md",
+                "02.JVM中的对象.md",
+                "03.JVM垃圾回收算法和垃圾回收器.md",
+                "04.JVM的执行子系统.md",
+                "05.JVM性能优化.md",
             ]
         },
     ],
-    "/study-notes/message-oriented-middleware/": [
-        {
-            text: "RabbitMQ",
-            prefix: "rabbitmq",
-            children: [
-                "01.Linux单机安装RabbitMQ.md",
-                "02.RabbitMQ入门.md",
-            ]
-        },
-    ],
-    "/study-notes/nginx/": [
-        {
-            text: "Nginx",
-            children: [
-                "01.nginx+keepalived高可用.md",
-            ]
-        },
-    ],
-    "/study-notes/docker/": [
-        {
-            text: "Docker",
-            children: [
-                "01.揭开Docker的面纱.md",
-                "02.CentOS7安装Docker初体验.md",
-                "03.Docker基本操作.md",
-                "04.DockerFile构建镜像.md",
-                "05.Docker使用maven插件打包SpringBoot项目.md",
-                "06.Docker搭建MySQL并挂载数据.md",
-                "07.Docker搭建Redis5.0并挂载数据.md",
-                "08.Docker编排利器DockerCompose.md",
-            ]
-        },
-    ],
-    "/study-notes/design-pattern/": [
+    "/java-notes/design-pattern/": [
         {
             text: "创建型模式",
             children: [
@@ -136,6 +67,60 @@ export default sidebar({
             ]
         },
     ],
+    "/java-notes/mysql/": [
+        {
+            text: "MySQL",
+            children: [
+                "01.深入理解MySQL索引底层数据结构.md",
+                "02.MySQL体系结构概览.md",
+                "03.Explain执行计划详解.md",
+                "04.MySQL再深入执行计划之trace工具.md",
+                "05.SQL性能优化技巧.md",
+                "06.MySQL性能优化之索引设计.md",
+                "07.MySQL事务和锁.md",
+            ]
+        },
+    ],
+    "/java-notes/redis/": [
+        {
+            text: "Redis",
+            children: [
+                "01.Redis入门.md",
+                "02.Redis常见应用场景.md",
+                "03.Redis性能测试、jedis连接原理、弱事务.md",
+                "04.Redis高可用.md",
+            ]
+        },
+    ],
+    "/java-notes/message-oriented-middleware/": [
+        {
+            text: "RabbitMQ",
+            prefix: "rabbitmq",
+            children: [
+                "01.Linux单机安装RabbitMQ.md",
+                "02.RabbitMQ入门.md",
+            ]
+        },
+    ],
+    "/java-notes/zookeeper/": [
+        {
+            text: "Zookeeper",
+            children: [
+                "01.ZooKeeper入门.md",
+                "02.ZooKeeper Java客户端.md",
+                "03.ZooKeeper集群解析.md",
+                "04.ZooKeeper分布式锁的实现.md",
+            ]
+        },
+    ],
+    "/java-notes/nginx/": [
+        {
+            text: "Nginx",
+            children: [
+                "01.nginx+keepalived高可用.md",
+            ]
+        },
+    ],
     "/source-code/mybatis/": [
         {
             text: "Mybatis",
@@ -153,9 +138,11 @@ export default sidebar({
             ]
         },
     ],
-    "/software-installation/": [
+    "/dev-ops/software-installation/": [
         {
-            text: "软件安装",
+            text: "Linux软件安装",
+            prefix: "linux",
+            collapsable: true,
             children: [
                 "01.Linux(CentOS7)下Nginx安装.md",
                 "02.Linux(CentOS7)下安装jdk1.8.md",
@@ -167,10 +154,19 @@ export default sidebar({
                 "08.基于Gitea搭建属于自己的Git服务.md",
             ]
         },
-    ],
-    "/website-related/": [
         {
-            text: "软件安装",
+            text: "Window软件安装",
+            prefix: "window",
+            collapsable: true,
+            children: [
+                "01.win10开启ftp服务.md",
+                "02.SSH客户端真香组合之PuTTY和WinSCP.md",
+            ]
+        },
+    ],
+    "/dev-ops/website-related/": [
+        {
+            text: "网站相关",
             children: [
                 "01.基于Linux搭建Hexo.md",
                 "02.Hexo通用问题集锦.md",
@@ -183,12 +179,26 @@ export default sidebar({
             ]
         },
     ],
-    "/other/window/": [
+    "/dev-ops/docker/": [
         {
-            text: "window",
+            text: "Docker",
             children: [
-                "01.win10开启ftp服务.md",
-                "02.SSH客户端真香组合之PuTTY和WinSCP.md",
+                "01.揭开Docker的面纱.md",
+                "02.CentOS7安装Docker初体验.md",
+                "03.Docker基本操作.md",
+                "04.DockerFile构建镜像.md",
+                "05.Docker使用maven插件打包SpringBoot项目.md",
+                "06.Docker搭建MySQL并挂载数据.md",
+                "07.Docker搭建Redis5.0并挂载数据.md",
+                "08.Docker编排利器DockerCompose.md",
+            ]
+        },
+    ],
+    "/other/about/": [
+        {
+            text: "关于我",
+            children: [
+                "me.md",
             ]
         },
     ],
