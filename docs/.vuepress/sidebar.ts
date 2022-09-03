@@ -4,6 +4,7 @@ export default sidebar({
     "/java-notes": [
         {
             text: "并发编程",
+            icon: "concurrent",
             prefix: "concurrent",
             collapsable: true,
             children: [
@@ -19,6 +20,7 @@ export default sidebar({
         },
         {
             text: "JVM",
+            icon: "java",
             prefix: "jvm",
             collapsable: true,
             children: [
@@ -31,6 +33,7 @@ export default sidebar({
         },
         {
             text: "设计模式",
+            icon: "design-pattern",
             prefix: "design-pattern",
             collapsable: true,
             children: [
@@ -78,6 +81,7 @@ export default sidebar({
         },
         {
             text: "MySQL",
+            icon: "mysql",
             prefix: "mysql",
             collapsable: true,
             children: [
@@ -92,6 +96,7 @@ export default sidebar({
         },
         {
             text: "Redis",
+            icon: "redis",
             prefix: "redis",
             collapsable: true,
             children: [
@@ -103,11 +108,13 @@ export default sidebar({
         },
         {
             text: "消息中间件",
+            icon: "message-oriented-middleware",
             prefix: "message-oriented-middleware",
             collapsable: true,
             children: [
                 {
                     text: "RabbitMQ",
+                    icon: "rabbitmq",
                     prefix: "rabbitmq",
                     collapsable: true,
                     children: [
@@ -119,6 +126,7 @@ export default sidebar({
         },
         {
             text: "Zookeeper",
+            icon: "zookeeper",
             prefix: "zookeeper",
             collapsable: true,
             children: [
@@ -130,6 +138,7 @@ export default sidebar({
         },
         {
             text: "Nginx",
+            icon: "nginx",
             prefix: "nginx",
             collapsable: true,
             children: [
@@ -140,6 +149,7 @@ export default sidebar({
     "/source-code": [
         {
             text: "Mybatis",
+            icon: "mybatis",
             prefix: "mybatis",
             collapsable: true,
             children: [
@@ -159,11 +169,13 @@ export default sidebar({
     "/dev-ops": [
         {
             text: "软件安装",
+            icon: "software-installation",
             prefix: "software-installation",
             collapsable: true,
             children: [
                 {
                     text: "Linux",
+                    icon: "linux",
                     prefix: "linux",
                     collapsable: true,
                     children: [
@@ -179,6 +191,7 @@ export default sidebar({
                 },
                 {
                     text: "Window",
+                    icon: "window",
                     prefix: "window",
                     collapsable: true,
                     children: [
@@ -190,6 +203,7 @@ export default sidebar({
         },
         {
             text: "网站相关",
+            icon: "website-related",
             prefix: "website-related",
             collapsable: true,
             children: [
@@ -205,6 +219,7 @@ export default sidebar({
         },
         {
             text: "Docker",
+            icon: "docker",
             prefix: "docker",
             collapsable: true,
             children: [
