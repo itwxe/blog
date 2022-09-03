@@ -6,7 +6,21 @@ $content-width: 960px;
   font-family: "JetBrainsMonoNL-Regular";
   src: url("/font/JetBrainsMonoNL-Regular.woff2");
 }
+@font-face {
+  font-family: "title-font";
+  src: url("/font/title-font.woff2");
+}
+
+.navbar .site-name {
+  font-family: "title-font";
+}
+
+.home.project .hero h1 {
+  font-weight: 300;
+  font-family: 'title-font';
+}
+
 // 正文字体
-//$font-family: '"JetBrainsMonoNL-Regular", "PingFang SC", "Microsoft Yahei"';
+$font-family: '"JetBrainsMonoNL-Regular"';
 // 代码块字体
-$font-family-code: "JetBrainsMonoNL-Regular";
+$font-family-code: '"JetBrainsMonoNL-Regular"';

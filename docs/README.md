@@ -1,7 +1,6 @@
 ---
 home: true
 icon: home
-heroImage: /favicon.ico
 heroText: IT王小二の技术小站
 tagline: Java程序猿一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。
 actions:
@@ -42,6 +41,7 @@ actions:
 - 2021年 4月，新域名`itwxe.com`注册成功，笔名修改为`IT王小二`，同时备案完成。
 - 2021年12月，博客框架由`Hexo`重构为`VuePress1.x`版本。
 - 2022年 7月，博客框架升级`VuePress2.x-beta`版本。
+- 2022年 9月，网站名称不合规由`IT王小二`修改为`IT技术小站`。
 
 ## 最后
 
