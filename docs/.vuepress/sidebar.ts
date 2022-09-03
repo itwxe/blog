@@ -1,9 +1,11 @@
 import {sidebar} from "vuepress-theme-hope";
 
 export default sidebar({
-    "/java-notes/concurrent/": [
+    "/java-notes": [
         {
             text: "并发编程",
+            prefix: "concurrent",
+            collapsable: true,
             children: [
                 "01.线程基础、线程之间的共享和协作.md",
                 "02.Java线程的并发工具类.md",
@@ -15,10 +17,10 @@ export default sidebar({
                 "08.实现一个并发任务执行框架.md",
             ]
         },
-    ],
-    "/java-notes/jvm/": [
         {
             text: "JVM",
+            prefix: "jvm",
+            collapsable: true,
             children: [
                 "01.JVM组成结构.md",
                 "02.JVM中的对象.md",
@@ -27,49 +29,57 @@ export default sidebar({
                 "05.JVM性能优化.md",
             ]
         },
-    ],
-    "/java-notes/design-pattern/": [
         {
-            text: "创建型模式",
+            text: "设计模式",
+            prefix: "design-pattern",
+            collapsable: true,
             children: [
-                "01.实战工厂方法模式.md",
-                "02.实战抽象工厂模式.md",
-                "03.实战建造者模式.md",
-                "04.实战原型模式.md",
-                "05.实战单例模式.md",
+                {
+                    text: "创建型模式",
+                    collapsable: true,
+                    children: [
+                        "01.实战工厂方法模式.md",
+                        "02.实战抽象工厂模式.md",
+                        "03.实战建造者模式.md",
+                        "04.实战原型模式.md",
+                        "05.实战单例模式.md",
+                    ]
+                },
+                {
+                    text: "结构型模式",
+                    collapsable: true,
+                    children: [
+                        "06.实战适配器模式.md",
+                        "07.实战桥接模式.md",
+                        "08.实战组合模式.md",
+                        "09.实战装饰器模式.md",
+                        "10.实战外观模式.md",
+                        "11.实战享元模式.md",
+                        "12.实战代理模式.md",
+                    ]
+                },
+                {
+                    text: "行为型模式",
+                    collapsable: true,
+                    children: [
+                        "13.实战责任链模式.md",
+                        "14.实战命令模式.md",
+                        "15.实战迭代器模式.md",
+                        "16.实战中介者模式.md",
+                        "17.实战备忘录模式.md",
+                        "18.实战观察者模式.md",
+                        "19.实战状态模式.md",
+                        "20.实战策略模式.md",
+                        "21.实战模板模式.md",
+                        "23.实战访问者模式.md",
+                    ]
+                },
             ]
         },
-        {
-            text: "结构型模式",
-            children: [
-                "06.实战适配器模式.md",
-                "07.实战桥接模式.md",
-                "08.实战组合模式.md",
-                "09.实战装饰器模式.md",
-                "10.实战外观模式.md",
-                "11.实战享元模式.md",
-                "12.实战代理模式.md",
-            ]
-        },
-        {
-            text: "行为型模式",
-            children: [
-                "13.实战责任链模式.md",
-                "14.实战命令模式.md",
-                "15.实战迭代器模式.md",
-                "16.实战中介者模式.md",
-                "17.实战备忘录模式.md",
-                "18.实战观察者模式.md",
-                "19.实战状态模式.md",
-                "20.实战策略模式.md",
-                "21.实战模板模式.md",
-                "23.实战访问者模式.md",
-            ]
-        },
-    ],
-    "/java-notes/mysql/": [
         {
             text: "MySQL",
+            prefix: "mysql",
+            collapsable: true,
             children: [
                 "01.深入理解MySQL索引底层数据结构.md",
                 "02.MySQL体系结构概览.md",
@@ -80,10 +90,10 @@ export default sidebar({
                 "07.MySQL事务和锁.md",
             ]
         },
-    ],
-    "/java-notes/redis/": [
         {
             text: "Redis",
+            prefix: "redis",
+            collapsable: true,
             children: [
                 "01.Redis入门.md",
                 "02.Redis常见应用场景.md",
@@ -91,20 +101,26 @@ export default sidebar({
                 "04.Redis高可用.md",
             ]
         },
-    ],
-    "/java-notes/message-oriented-middleware/": [
         {
-            text: "RabbitMQ",
-            prefix: "rabbitmq",
+            text: "消息中间件",
+            prefix: "message-oriented-middleware",
+            collapsable: true,
             children: [
-                "01.Linux单机安装RabbitMQ.md",
-                "02.RabbitMQ入门.md",
+                {
+                    text: "RabbitMQ",
+                    prefix: "rabbitmq",
+                    collapsable: true,
+                    children: [
+                        "01.Linux单机安装RabbitMQ.md",
+                        "02.RabbitMQ入门.md",
+                    ]
+                },
             ]
         },
-    ],
-    "/java-notes/zookeeper/": [
         {
             text: "Zookeeper",
+            prefix: "zookeeper",
+            collapsable: true,
             children: [
                 "01.ZooKeeper入门.md",
                 "02.ZooKeeper Java客户端.md",
@@ -112,18 +128,20 @@ export default sidebar({
                 "04.ZooKeeper分布式锁的实现.md",
             ]
         },
-    ],
-    "/java-notes/nginx/": [
         {
             text: "Nginx",
+            prefix: "nginx",
+            collapsable: true,
             children: [
                 "01.nginx+keepalived高可用.md",
             ]
         },
     ],
-    "/source-code/mybatis/": [
+    "/source-code": [
         {
             text: "Mybatis",
+            prefix: "mybatis",
+            collapsable: true,
             children: [
                 "01.MyBatis源码概述.md",
                 "02.MyBatis日志模块分析.md",
@@ -138,35 +156,42 @@ export default sidebar({
             ]
         },
     ],
-    "/dev-ops/software-installation/": [
+    "/dev-ops": [
         {
-            text: "Linux软件安装",
-            prefix: "linux",
+            text: "软件安装",
+            prefix: "software-installation",
             collapsable: true,
             children: [
-                "01.Linux(CentOS7)下Nginx安装.md",
-                "02.Linux(CentOS7)下安装jdk1.8.md",
-                "03.Linux(CentOS7)下配置多个tomcat.md",
-                "04.Linux(CentOS7)下rpm安装MySQL8.0.16.md",
-                "05.Linux(CentOS7)安装MinIO.md",
-                "06.Linux(CentOS7)安装Redis5.0.md",
-                "07.Linux(CentOS7)下二进制安装MySQL5.7.26.md",
-                "08.基于Gitea搭建属于自己的Git服务.md",
+                {
+                    text: "Linux",
+                    prefix: "linux",
+                    collapsable: true,
+                    children: [
+                        "01.Linux(CentOS7)下Nginx安装.md",
+                        "02.Linux(CentOS7)下安装jdk1.8.md",
+                        "03.Linux(CentOS7)下配置多个tomcat.md",
+                        "04.Linux(CentOS7)下rpm安装MySQL8.0.16.md",
+                        "05.Linux(CentOS7)安装MinIO.md",
+                        "06.Linux(CentOS7)安装Redis5.0.md",
+                        "07.Linux(CentOS7)下二进制安装MySQL5.7.26.md",
+                        "08.基于Gitea搭建属于自己的Git服务.md",
+                    ]
+                },
+                {
+                    text: "Window",
+                    prefix: "window",
+                    collapsable: true,
+                    children: [
+                        "01.win10开启ftp服务.md",
+                        "02.SSH客户端真香组合之PuTTY和WinSCP.md",
+                    ]
+                },
             ]
         },
-        {
-            text: "Window软件安装",
-            prefix: "window",
-            collapsable: true,
-            children: [
-                "01.win10开启ftp服务.md",
-                "02.SSH客户端真香组合之PuTTY和WinSCP.md",
-            ]
-        },
-    ],
-    "/dev-ops/website-related/": [
         {
             text: "网站相关",
+            prefix: "website-related",
+            collapsable: true,
             children: [
                 "01.基于Linux搭建Hexo.md",
                 "02.Hexo通用问题集锦.md",
@@ -178,10 +203,10 @@ export default sidebar({
                 "08.Docker安装LskyPro2.0升级过程.md",
             ]
         },
-    ],
-    "/dev-ops/docker/": [
         {
             text: "Docker",
+            prefix: "docker",
+            collapsable: true,
             children: [
                 "01.揭开Docker的面纱.md",
                 "02.CentOS7安装Docker初体验.md",
@@ -194,9 +219,10 @@ export default sidebar({
             ]
         },
     ],
-    "/other/about/": [
+    "/other": [
         {
             text: "关于我",
+            prefix: "about",
             children: [
                 "me.md",
             ]
