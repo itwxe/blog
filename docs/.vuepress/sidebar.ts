@@ -202,19 +202,43 @@ export default sidebar({
             ]
         },
         {
+            text: "博客搭建",
+            icon: "blog-build",
+            prefix: "blog-build",
+            collapsable: true,
+            children: [
+                {
+                    text: "Hexo",
+                    icon: "hexo",
+                    prefix: "hexo",
+                    collapsable: true,
+                    children: [
+                        "01.基于Linux搭建Hexo.md",
+                        "02.Hexo通用问题集锦.md",
+                    ]
+                },
+                {
+                    text: "写作工具",
+                    icon: "util",
+                    prefix: "util",
+                    collapsable: true,
+                    children: [
+                        "01.Typora+PicGo+LskyPro打造舒适写作环境.md",
+                        "02.Docker安装LskyPro2.0升级过程.md",
+                    ]
+                },
+            ]
+        },
+        {
             text: "网站相关",
             icon: "website-related",
             prefix: "website-related",
             collapsable: true,
             children: [
-                "01.基于Linux搭建Hexo.md",
-                "02.Hexo通用问题集锦.md",
-                "03.使用Let's Encrypt实现网站https化.md",
-                "04.域名更换为itwxe.com.md",
-                "05.Typora+PicGo+LskyPro打造舒适写作环境.md",
-                "06.Let's Encrypt泛域名使用和Nginx配置拆分.md",
-                "07.一文明白CDN加速是个啥.md",
-                "08.Docker安装LskyPro2.0升级过程.md",
+                "01.域名更换为itwxe.com.md",
+                "02.使用Let's Encrypt实现网站https化.md",
+                "03.Let's Encrypt泛域名使用和Nginx配置拆分.md",
+                "04.一文明白CDN加速是个啥.md",
             ]
         },
         {

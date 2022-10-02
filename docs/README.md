@@ -4,7 +4,7 @@ icon: home
 heroText: IT王小二の技术小站
 tagline: Java程序猿一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。
 actions:
-  - text: 快速开始 →
+  - text: 开始阅读 →
     link: /java-notes/concurrent/6544e59d.html
     type: primary
 ---
