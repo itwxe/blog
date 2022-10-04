@@ -19,7 +19,7 @@ export default navbar([
     {
         text: "DevOps",
         icon: "setting",
-        link: "/dev-ops/software-installation/linux/01.Linux(CentOS7)下Nginx安装.md",
+        link: "/dev-ops/software-installation/linux/01.Linux安装Nginx.md",
     },
     {
         text: "其他",

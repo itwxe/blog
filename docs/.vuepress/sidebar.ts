@@ -179,14 +179,13 @@ export default sidebar({
                     prefix: "linux",
                     collapsable: true,
                     children: [
-                        "01.Linux(CentOS7)下Nginx安装.md",
-                        "02.Linux(CentOS7)下安装jdk1.8.md",
-                        "03.Linux(CentOS7)下配置多个tomcat.md",
-                        "04.Linux(CentOS7)下rpm安装MySQL8.0.16.md",
-                        "05.Linux(CentOS7)安装MinIO.md",
-                        "06.Linux(CentOS7)安装Redis5.0.md",
-                        "07.Linux(CentOS7)下二进制安装MySQL5.7.26.md",
-                        "08.基于Gitea搭建属于自己的Git服务.md",
+                        "01.Linux安装Nginx.md",
+                        "02.Linux安装jdk1.8.md",
+                        "03.Linux配置多个tomcat.md",
+                        "04.Linux二进制安装MySQL5.7.26.md",
+                        "05.Linux安装MinIO.md",
+                        "06.Linux安装Redis5.0.md",
+                        "07.基于Gitea搭建属于自己的Git服务.md",
                     ]
                 },
                 {
