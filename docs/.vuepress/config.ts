@@ -60,7 +60,7 @@ export default defineUserConfig({
                     placeholder: '搜索',
                 },
             },
-            maxSuggestions: 10,
+            maxSuggestions: 15,
             // 排除首页
             isSearchable: (page) => page.path !== "/",
             // 热键s打开搜索框输入搜索
