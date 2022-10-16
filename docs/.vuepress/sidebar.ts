@@ -166,6 +166,17 @@ export default sidebar({
             ]
         },
     ],
+    "/python-notes": [
+        {
+            text: "Python基础",
+            icon: "base",
+            prefix: "python-base",
+            collapsable: true,
+            children: [
+                "01.Python开发环境搭建.md",
+            ]
+        },
+    ],
     "/dev-ops": [
         {
             text: "软件安装",

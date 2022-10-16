@@ -17,6 +17,11 @@ export default navbar([
         link: "/source-code/mybatis/01.MyBatis源码概述.md",
     },
     {
+        text: "Python笔记",
+        icon: "python",
+        link: "/python-notes/python-base/01.Python开发环境搭建.md",
+    },
+    {
         text: "DevOps",
         icon: "setting",
         link: "/dev-ops/software-installation/linux/01.Linux安装Nginx.md",
