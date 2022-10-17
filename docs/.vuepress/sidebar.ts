@@ -168,7 +168,7 @@ export default sidebar({
     ],
     "/python-notes": [
         {
-            text: "Python基础",
+            text: "Python筑基篇",
             icon: "base",
             prefix: "python-base",
             collapsable: true,
