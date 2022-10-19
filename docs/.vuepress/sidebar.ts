@@ -174,6 +174,7 @@ export default sidebar({
             collapsable: true,
             children: [
                 "01.Python开发环境搭建.md",
+                "02.变量及数据类型.md",
             ]
         },
     ],
