@@ -126,6 +126,10 @@ export default hopeTheme({
 
         mdEnhance: {
             // enableAll: true,
+            // 启用下角标功能，使用^ ^进行上角标标注 19^th^
+            sub: true,
+            // 启用上角标，使用~ ~进行下角标标注 H~2~O
+            sup: true,
             presentation: {
                 plugins: ["highlight", "search", "notes", "zoom"],
             },
