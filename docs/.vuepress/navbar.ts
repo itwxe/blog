@@ -22,7 +22,7 @@ export default navbar([
         link: "/python-notes/python-base/01.Python开发环境搭建.md",
     },
     {
-        text: "DevOps",
+        text: "部署笔记",
         icon: "setting",
         link: "/dev-ops/software-installation/linux/01.Linux安装Nginx.md",
     },
