@@ -1,6 +1,6 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme";
-import {searchPlugin} from "@vuepress/plugin-search";
+import {searchProPlugin} from "vuepress-plugin-search-pro";
 import * as path from "path";
 
 export default defineUserConfig({
@@ -11,7 +11,7 @@ export default defineUserConfig({
     // 指定 vuepress build 的输出目录
     dest: "./dist",
     // 是否开启默认预加载 js
-    shouldPrefetch: (file, type) => false,
+    shouldPrefetch: false,
     head: [
         // meta
         ["meta", { name: "robots", content: "all" }],
@@ -54,19 +54,13 @@ export default defineUserConfig({
         },
     },
     plugins: [
-        searchPlugin({
+        searchProPlugin({
             locales: {
                 "/": {
                     placeholder: '搜索',
                 },
             },
-            maxSuggestions: 15,
-            // 排除首页
-            isSearchable: (page) => page.path !== "/",
-            // 热键s打开搜索框输入搜索
-            hotKeys: ["s", "/"],
-            // 用于在页面的搜索索引中添加额外字段
-            getExtraFields: () => [],
+            indexContent: false,
         }),
     ],
     clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),

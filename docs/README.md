@@ -1,5 +1,6 @@
 ---
 home: true
+title: 首页
 icon: home
 heroText: IT王小二の技术小站
 tagline: Java程序猿一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。

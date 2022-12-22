@@ -1,12 +1,12 @@
 import {sidebar} from "vuepress-theme-hope";
 
-export default sidebar({
+export const sidebarConfig = sidebar({
     "/java-notes": [
         {
             text: "并发编程",
             icon: "concurrent",
             prefix: "concurrent",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.线程基础、线程之间的共享和协作.md",
                 "02.Java线程的并发工具类.md",
@@ -22,7 +22,7 @@ export default sidebar({
             text: "JVM",
             icon: "java",
             prefix: "jvm",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.JVM组成结构.md",
                 "02.JVM中的对象.md",
@@ -35,11 +35,11 @@ export default sidebar({
             text: "设计模式",
             icon: "design-pattern",
             prefix: "design-pattern",
-            collapsable: true,
+            collapsible: true,
             children: [
                 {
                     text: "创建型模式",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "01.实战工厂方法模式.md",
                         "02.实战抽象工厂模式.md",
@@ -50,7 +50,7 @@ export default sidebar({
                 },
                 {
                     text: "结构型模式",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "06.实战适配器模式.md",
                         "07.实战桥接模式.md",
@@ -63,7 +63,7 @@ export default sidebar({
                 },
                 {
                     text: "行为型模式",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "13.实战责任链模式.md",
                         "14.实战命令模式.md",
@@ -83,7 +83,7 @@ export default sidebar({
             text: "MySQL",
             icon: "mysql",
             prefix: "mysql",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.深入理解MySQL索引底层数据结构.md",
                 "02.MySQL体系结构概览.md",
@@ -98,7 +98,7 @@ export default sidebar({
             text: "Redis",
             icon: "redis",
             prefix: "redis",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.Redis入门.md",
                 "02.Redis常见应用场景.md",
@@ -110,13 +110,13 @@ export default sidebar({
             text: "消息中间件",
             icon: "message-oriented-middleware",
             prefix: "message-oriented-middleware",
-            collapsable: true,
+            collapsible: true,
             children: [
                 {
                     text: "RabbitMQ",
                     icon: "rabbitmq",
                     prefix: "rabbitmq",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "01.Linux单机安装RabbitMQ.md",
                         "02.RabbitMQ入门.md",
@@ -128,7 +128,7 @@ export default sidebar({
             text: "Zookeeper",
             icon: "zookeeper",
             prefix: "zookeeper",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.ZooKeeper入门.md",
                 "02.ZooKeeper Java客户端.md",
@@ -140,7 +140,7 @@ export default sidebar({
             text: "Nginx",
             icon: "nginx",
             prefix: "nginx",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.nginx+keepalived高可用.md",
             ]
@@ -151,7 +151,7 @@ export default sidebar({
             text: "Mybatis",
             icon: "mybatis",
             prefix: "mybatis",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.MyBatis源码概述.md",
                 "02.MyBatis日志模块分析.md",
@@ -171,7 +171,7 @@ export default sidebar({
             text: "Python筑基篇",
             icon: "base",
             prefix: "python-base",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.Python开发环境搭建.md",
                 "02.变量及变量类型.md",
@@ -183,13 +183,13 @@ export default sidebar({
             text: "软件安装",
             icon: "software-installation",
             prefix: "software-installation",
-            collapsable: true,
+            collapsible: true,
             children: [
                 {
                     text: "Linux",
                     icon: "linux",
                     prefix: "linux",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "01.Linux安装Nginx.md",
                         "02.Linux安装jdk1.8.md",
@@ -204,7 +204,7 @@ export default sidebar({
                     text: "Window",
                     icon: "window",
                     prefix: "window",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "01.win10开启ftp服务.md",
                         "02.SSH客户端真香组合之PuTTY和WinSCP.md",
@@ -216,13 +216,13 @@ export default sidebar({
             text: "博客搭建",
             icon: "blog-build",
             prefix: "blog-build",
-            collapsable: true,
+            collapsible: true,
             children: [
                 {
                     text: "Hexo",
                     icon: "hexo",
                     prefix: "hexo",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "01.基于Linux搭建Hexo.md",
                         "02.Hexo通用问题集锦.md",
@@ -232,7 +232,7 @@ export default sidebar({
                     text: "写作工具",
                     icon: "util",
                     prefix: "util",
-                    collapsable: true,
+                    collapsible: true,
                     children: [
                         "01.Typora+PicGo+LskyPro打造舒适写作环境.md",
                         "02.Docker安装LskyPro2.0升级过程.md",
@@ -245,7 +245,7 @@ export default sidebar({
             text: "网站相关",
             icon: "website-related",
             prefix: "website-related",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.域名更换为itwxe.com.md",
                 "02.使用Let's Encrypt实现网站https化.md",
@@ -257,7 +257,7 @@ export default sidebar({
             text: "Docker",
             icon: "docker",
             prefix: "docker",
-            collapsable: true,
+            collapsible: true,
             children: [
                 "01.揭开Docker的面纱.md",
                 "02.CentOS7安装Docker初体验.md",
