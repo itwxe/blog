@@ -97,11 +97,12 @@ export default hopeTheme({
             container: true,
             demo: false,
             echarts: false,
-            figure: true,
+            figure: false,
             flowchart: false,
-            gfm: true,
+            gfm: false,
             imageLazyload: true,
             imageSize: true,
+            imageMark: false,
             include: false,
             katex: false,
             mark: false,
@@ -131,7 +132,5 @@ export default hopeTheme({
             vPre: false,
             vuePlayground: false,
         },
-
-
     },
 });
