@@ -132,5 +132,8 @@ export default hopeTheme({
             vPre: false,
             vuePlayground: false,
         },
+        autoCatalog: {
+            exclude: ["/"],
+        },
     },
 });

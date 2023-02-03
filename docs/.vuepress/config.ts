@@ -1,7 +1,7 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme";
 import {searchProPlugin} from "vuepress-plugin-search-pro";
-// import * as path from "path";
+import * as path from "path";
 
 export default defineUserConfig({
     lang: "zh-CN",
@@ -63,6 +63,6 @@ export default defineUserConfig({
             indexContent: false,
         }),
     ],
-    // clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
+    clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
     theme,
 });
