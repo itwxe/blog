@@ -175,6 +175,7 @@ export const sidebarConfig = sidebar({
             children: [
                 "01.Python开发环境搭建.md",
                 "02.变量及变量类型.md",
+                "03.控制流程.md",
             ]
         },
     ],
