@@ -238,6 +238,7 @@ export const sidebarConfig = sidebar({
                         "01.Typora+PicGo+LskyPro打造舒适写作环境.md",
                         "02.Docker安装LskyPro2.0升级过程.md",
                         "03.Typora+MinIO+Java代码打造舒适写作环境.md",
+                        "04.Typora+MinIO+Python代码打造舒适协作环境.md",
                     ]
                 },
             ]
