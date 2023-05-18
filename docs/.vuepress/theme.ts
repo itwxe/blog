@@ -69,7 +69,11 @@ export default hopeTheme({
         comment: {
             provider: "Artalk",
             comment: true,
-            server: "https://itwxe.com/comment"
+            placeholder: "昵称及邮箱非常重要，请勿随意填写！",
+            noComment: "「空空如也」",
+            sendBtn: "发表",
+            server: "https://itwxe.com/comment",
+            useBackendConf: true
         },
 
         mdEnhance: {
