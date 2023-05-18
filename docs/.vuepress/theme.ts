@@ -31,7 +31,7 @@ export default hopeTheme({
     // 导航栏仓库地址
     repo: "itwxe/blog",
     // 文章信息，可以填入数组，数组的顺序是各条目显示的顺序
-    pageInfo: ["Author", "Date", "Category", "Tag", "Original", "Word"],
+    pageInfo: ["Author", "Date", "Original", "Word", "PageView"],
     // 文章最后更新时间
     lastUpdated: true,
     // 页脚信息，可以输入HTMLString
@@ -71,6 +71,11 @@ export default hopeTheme({
             comment: true,
             placeholder: "昵称及邮箱非常重要，请勿随意填写！",
             noComment: "「空空如也」",
+            pagination: {
+                pageSize: 20,   // 每页评论数
+                readMore: true, // 加载更多 or 分页条
+                autoLoad: false // 自动加载 (加载更多)
+            },
             sendBtn: "发表",
             server: "https://itwxe.com/comment",
             useBackendConf: true
