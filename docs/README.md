@@ -12,7 +12,9 @@ actions:
 
 ## 本站导航
 
-![本站导航](/images/system/本站导航.svg)
+<object data="/images/system/本站导航.svg" type="image/svg+xml" width="100%">
+本站导航.svg
+</object>
 
 小二的其他平台链接：[掘金](https://juejin.cn/user/2225067267470023/posts)、[博客园](https://www.cnblogs.com/itwxe)，能给小二点个免费的赞就更好啦😊
 
