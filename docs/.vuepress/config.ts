@@ -61,13 +61,6 @@ export default defineUserConfig({
                     placeholder: '搜索',
                 },
             },
-            customFields: [
-                {
-                    name: "title",
-                    getter: (page) => page.frontmatter.title,
-                    formatter: "名称：$content",
-                },
-            ],
         }),
     ],
     clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
