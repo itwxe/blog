@@ -55,12 +55,19 @@ export default defineUserConfig({
     },
     plugins: [
         searchProPlugin({
+            indexContent: false,
             locales: {
                 "/": {
                     placeholder: '搜索',
                 },
             },
-            indexContent: false,
+            customFields: [
+                {
+                    name: "title",
+                    getter: (page) => page.frontmatter.title,
+                    formatter: "名称：$content",
+                },
+            ],
         }),
     ],
     clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
