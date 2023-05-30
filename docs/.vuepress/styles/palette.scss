@@ -14,13 +14,13 @@ $theme-color: #2980B9;
   src: url("/font/title-font.woff2");
 }
 
-.navbar .site-name {
+.vp-site-name {
   font-family: "title-font";
 }
 
-.hero-info-wrapper h1 {
+#main-title {
   font-weight: 300;
-  font-family: 'title-font';
+  font-family: "title-font";
 }
 
 // 正文字体
