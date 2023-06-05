@@ -55,6 +55,8 @@ export default hopeTheme({
     iconPrefix: "iconfont icon-",
     // 是否开启纯净模式，启用此功能将禁用一些花哨的样式
     pure: true,
+    // 深色模式
+    darkmode: "disable",
 
     // 插件开始========================================================================
 
@@ -123,8 +125,6 @@ export default hopeTheme({
             vPre: false,
             vuePlayground: false,
         },
-        autoCatalog: {
-            exclude: ["/"],
-        },
+        autoCatalog: false,
     },
 });
