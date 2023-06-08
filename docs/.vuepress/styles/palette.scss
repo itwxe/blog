@@ -16,11 +16,11 @@ $theme-color: #2980B9;
 
 // 站点标题字体
 .vp-site-name {
-  font-weight: 400;
+  font-weight: 500;
   font-family: "LXGWWenKaiMono-Regular";
 }
 #main-title {
-  font-weight: 300;
+  font-weight: 500;
   font-family: "LXGWWenKaiMono-Regular";
 }
 
@@ -28,5 +28,5 @@ $theme-color: #2980B9;
 $font-family: '"LXGWWenKaiMono-Regular"';
 // 标题字体
 $font-family-heading: '"LXGWWenKaiMono-Regular"';
-//// 代码块字体
-//$font-family-code: '"JetBrainsMonoNL-Regular"';
+// 代码块字体
+$font-family-mono: '"JetBrainsMonoNL-Regular"';

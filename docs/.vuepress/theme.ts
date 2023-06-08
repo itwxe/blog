@@ -86,6 +86,7 @@ export default hopeTheme({
         mdEnhance: {
             align: false,
             attrs: false,
+            card: false,
             chart: false,
             codetabs: false,
             container: true,
@@ -122,6 +123,7 @@ export default hopeTheme({
             sub: true,
             sup: true,
             tabs: false,
+            tasklist: true,
             vPre: false,
             vuePlayground: false,
         },
