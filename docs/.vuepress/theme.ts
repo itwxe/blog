@@ -71,7 +71,7 @@ export default hopeTheme({
         comment: {
             provider: "Artalk",
             comment: true,
-            placeholder: "昵称及邮箱非常重要，请勿随意填写！",
+            placeholder: "请填写昵称及邮箱，用于接收回复！",
             noComment: "「空空如也」",
             pagination: {
                 pageSize: 20,   // 每页评论数
@@ -104,9 +104,7 @@ export default hopeTheme({
             // playground: {
             //     presets: ["ts", "vue"],
             // },
-            presentation: {
-                plugins: ["highlight", "math", "search", "notes", "zoom"],
-            },
+            presentation: ["highlight", "math", "search", "notes", "zoom"],
             stylize: [
                 {
                     matcher: "Recommended",
