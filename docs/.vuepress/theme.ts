@@ -84,12 +84,18 @@ export default hopeTheme({
         },
 
         mdEnhance: {
-            align: false,
+            align: true,
             attrs: false,
             card: false,
             chart: false,
             codetabs: false,
             container: true,
+            checkLinks: {
+                // 是否检查 Markdown 中的死链
+                status: "dev",
+                // 忽略的死链
+                ignore: [],
+            },
             demo: false,
             echarts: false,
             figure: false,
