@@ -220,16 +220,6 @@ export const sidebarConfig = sidebar({
             collapsible: true,
             children: [
                 {
-                    text: "Hexo",
-                    icon: "hexo",
-                    prefix: "hexo",
-                    collapsible: true,
-                    children: [
-                        "01.基于Linux搭建Hexo.md",
-                        "02.Hexo通用问题集锦.md",
-                    ]
-                },
-                {
                     text: "写作工具",
                     icon: "util",
                     prefix: "util",
