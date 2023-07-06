@@ -199,6 +199,7 @@ export const sidebarConfig = sidebar({
                         "05.Linux安装MinIO.md",
                         "06.Linux安装Redis5.0.md",
                         "07.基于Gitea搭建属于自己的Git服务.md",
+                        "08.Linux安装Docker.md",
                     ]
                 },
                 {
