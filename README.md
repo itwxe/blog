@@ -27,7 +27,7 @@
 
 微信公众号：IT王小二
 
-<img src="https://itwxe.com/images/system/qrcode_avatar.png" width="260" heigit="260"/>
+导航中未标注 <font color="00CC66">(规划中)</font> 字样的可以点击直接进入该目录文章的；标注 <font color="00CC66">(规划中)</font> 字样的代表还在规划中未来要完成的。
 
 ## 博客历程
 

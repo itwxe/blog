@@ -16,7 +16,7 @@ actions:
 本站导航.svg
 </object>
 
-导航中带有[链接图标](https://itwxe.com)的，是可以点击直接进入该目录文章的，未带有链接图标的代表还在规划中未来要完成的。
+导航中未标注 <font color="00CC66">(规划中)</font> 字样的可以点击直接进入该目录文章的；标注 <font color="00CC66">(规划中)</font> 字样的代表还在规划中未来要完成的。
 
 小二的其他平台链接：[掘金](https://juejin.cn/user/2225067267470023/posts)、[博客园](https://www.cnblogs.com/itwxe)，能给小二点个免费的赞就更好啦😊
 
