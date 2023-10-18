@@ -9,24 +9,28 @@ $theme-color: #2980B9;
   font-family: "JetBrainsMonoNL-Regular";
   src: url("/font/JetBrainsMonoNL-Regular.woff2");
 }
+//@font-face {
+//  font-family: "LXGWWenKaiMono-Regular";
+//  src: url("/font/LXGWWenKaiMono-Regular.woff2");
+//}
 @font-face {
-  font-family: "LXGWWenKaiMono-Regular";
-  src: url("/font/LXGWWenKaiMono-Regular.woff2");
+  font-family: "title-font";
+  src: url("/font/LXGWWenKaiMono-Regular-title-font.ttf");
 }
 
 // 站点标题字体
 .vp-site-name {
   font-weight: 500;
-  font-family: "LXGWWenKaiMono-Regular";
+  font-family: "title-font";
 }
 #main-title {
   font-weight: 500;
-  font-family: "LXGWWenKaiMono-Regular";
+  font-family: "title-font";
 }
 
-// 正文字体
-$font-family: '"LXGWWenKaiMono-Regular"';
-// 标题字体
-$font-family-heading: '"LXGWWenKaiMono-Regular"';
-// 代码块字体
-$font-family-mono: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
+//// 正文字体
+//$font-family: '"JetBrainsMonoNL-Regular"';
+//// 标题字体
+$font-family-heading: '"JetBrainsMonoNL-Regular"';
+//// 代码块字体
+//$font-family-mono: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
