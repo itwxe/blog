@@ -36,11 +36,20 @@ export default hopeTheme({
     lastUpdated: true,
     // 页脚信息，可以输入HTMLString
     footer:
-        "<a target=\"_blank\" rel=\"external nofollow noopener noreferrer\" href=\"https://beian.miit.gov.cn/\">" +
-            "赣ICP备2021001966号-2" +
+        "ICP备案号：" +
+        "<a target=\"_blank\" rel=\"external nofollow noopener noreferrer\" href=\"https://beian.miit.gov.cn/\">" + "赣ICP备2021001966号-2" + "</a>" +
+        "&nbsp;&nbsp;|&nbsp;&nbsp;" +
+        "驱动：" +
+        "<a target=\"_blank\" rel=\"external nofollow noopener noreferrer\" href=\"https://github.com/vuepress/vuepress-next\">" +
+        "vuepress" +
+        "</a>" +
+        "&nbsp;&nbsp;|&nbsp;&nbsp;" +
+        "主题：" +
+        "<a target=\"_blank\" rel=\"external nofollow noopener noreferrer\" href=\"https://github.com/vuepress-theme-hope/vuepress-theme-hope\">" +
+        "vuepress-theme-hope" +
         "</a>",
     // 页脚版权信息
-    copyright: "Copyright © 2019-present IT王小二",
+    copyright: "Copyright © 2019 - present IT王小二",
     // 是否默认显示页脚
     displayFooter: true,
     // 项目所在分支
