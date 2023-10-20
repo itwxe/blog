@@ -37,7 +37,7 @@ actions:
 
 微信公众号：IT王小二
 
-<img src="https://itwxe.com/images/system/qrcode_avatar.png" width="260" heigit="260"/>
+<img src="https://itwxe.com/images/system/qrcode_wechat.png" width="427.5" heigit="156"/>
 
 ## 博客历程
 
