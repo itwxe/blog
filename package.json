@@ -12,11 +12,11 @@
     "update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.67",
-    "vue": "^3.3.7",
-    "vuepress": "2.0.0-beta.67",
-    "vuepress-theme-hope": "2.0.0-beta.244",
+    "@vuepress/client": "2.0.0-rc.0",
+    "vue": "^3.3.8",
+    "vuepress": "2.0.0-rc.0",
+    "vuepress-theme-hope": "2.0.0-rc.0",
     "artalk": "2.6.4",
-    "vuepress-plugin-search-pro": "2.0.0-beta.244"
+    "vuepress-plugin-search-pro": "2.0.0-rc.0"
   }
 }

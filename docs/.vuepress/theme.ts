@@ -95,7 +95,6 @@ export default hopeTheme({
         mdEnhance: {
             align: true,
             attrs: false,
-            card: false,
             chart: false,
             codetabs: false,
             container: true,
