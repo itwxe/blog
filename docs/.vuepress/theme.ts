@@ -97,7 +97,7 @@ export default hopeTheme({
             attrs: false,
             chart: false,
             codetabs: false,
-            container: true,
+            hint: true,
             checkLinks: {
                 // 是否检查 Markdown 中的死链
                 status: "dev",
