@@ -139,6 +139,14 @@ export default hopeTheme({
             vPre: false,
             vuePlayground: false,
         },
-        autoCatalog: false,
+
+        search: {
+            locales: {
+                '/': {
+                    placeholder: '搜索',
+                },
+            },
+            maxSuggestions: 20,
+        },
     },
 });

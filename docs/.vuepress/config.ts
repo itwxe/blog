@@ -1,6 +1,6 @@
+import { viteBundler } from "@vuepress/bundler-vite";
 import {defineUserConfig} from "vuepress";
-import theme from "./theme";
-import {searchProPlugin} from "vuepress-plugin-search-pro";
+import theme from "./theme.js";
 import * as path from "path";
 
 export default defineUserConfig({
@@ -54,15 +54,9 @@ export default defineUserConfig({
         },
     },
     plugins: [
-        searchProPlugin({
-            indexContent: false,
-            locales: {
-                "/": {
-                    placeholder: '搜索',
-                },
-            },
-        }),
+
     ],
     clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
+    bundler: viteBundler(),
     theme,
 });
