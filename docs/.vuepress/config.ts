@@ -1,7 +1,6 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import {defineUserConfig} from "vuepress";
 import theme from "./theme.js";
-import * as path from "path";
 
 export default defineUserConfig({
     lang: "zh-CN",
@@ -56,7 +55,6 @@ export default defineUserConfig({
     plugins: [
 
     ],
-    clientConfigFile: path.resolve(__dirname, './enhanceApp.ts'),
     bundler: viteBundler(),
     theme,
 });
