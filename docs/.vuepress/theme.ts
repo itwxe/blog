@@ -67,7 +67,9 @@ export default hopeTheme({
     // 深色模式
     darkmode: "disable",
 
-    // 插件开始========================================================================
+    // 插件开始========================================================================、
+
+    breadcrumb: false,
 
     plugins: {
         // blog: {
@@ -148,5 +150,6 @@ export default hopeTheme({
             },
             maxSuggestions: 20,
         },
+        catalog: false
     },
 });
