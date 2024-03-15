@@ -100,12 +100,6 @@ export default hopeTheme({
             chart: false,
             codetabs: false,
             hint: true,
-            checkLinks: {
-                // 是否检查 Markdown 中的死链
-                status: "dev",
-                // 忽略的死链
-                ignore: [],
-            },
             demo: false,
             echarts: false,
             figure: false,
