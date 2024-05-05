@@ -166,16 +166,27 @@ export const sidebarConfig = sidebar({
             ]
         },
     ],
-    "/python-notes": [
+    // "/python-notes": [
+    //     {
+    //         text: "Python筑基篇",
+    //         icon: "base",
+    //         prefix: "python-base",
+    //         collapsible: true,
+    //         children: [
+    //             "01.Python开发环境搭建.md",
+    //             "02.变量及变量类型.md",
+    //             "03.控制流程.md",
+    //         ]
+    //     },
+    // ],
+    "/web-notes": [
         {
-            text: "Python筑基篇",
+            text: "前端基础三剑客",
             icon: "base",
-            prefix: "python-base",
+            prefix: "base",
             collapsible: true,
             children: [
-                "01.Python开发环境搭建.md",
-                "02.变量及变量类型.md",
-                "03.控制流程.md",
+                "01.HTML.md",
             ]
         },
     ],

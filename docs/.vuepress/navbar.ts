@@ -16,10 +16,15 @@ export const navbarConfig = navbar([
         icon: "code",
         link: "/source-code/mybatis/01.MyBatis源码概述.md",
     },
+    // {
+    //     text: "Python笔记",
+    //     icon: "python",
+    //     link: "/python-notes/python-base/01.Python开发环境搭建.md",
+    // },
     {
-        text: "Python笔记",
-        icon: "python",
-        link: "/python-notes/python-base/01.Python开发环境搭建.md",
+        text: "前端笔记",
+        icon: "web",
+        link: "/web-notes/base/01.HTML.md",
     },
     {
         text: "部署笔记",
