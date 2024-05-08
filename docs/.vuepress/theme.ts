@@ -60,7 +60,7 @@ export default hopeTheme({
     // 主题外观选项开始==================================================================
 
     // 字体图标资源链接，支持 'iconfont' 和 'font-awesome' 关键字。
-    iconAssets: "//at.alicdn.com/t/c/font_3627793_rzw7dzsxu5m.css",
+    iconAssets: "//at.alicdn.com/t/c/font_3627793_6t1jvj2bghp.css",
     iconPrefix: "iconfont icon-",
     // 是否开启纯净模式，启用此功能将禁用一些花哨的样式
     pure: true,
