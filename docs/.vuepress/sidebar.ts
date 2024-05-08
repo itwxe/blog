@@ -181,12 +181,33 @@ export const sidebarConfig = sidebar({
     // ],
     "/web-notes": [
         {
-            text: "前端基础三剑客",
-            icon: "base",
-            prefix: "base",
+            text: "HTML",
+            icon: "HTML",
+            prefix: "01-html",
             collapsible: true,
             children: [
-                "01.HTML.md",
+                "01.HTML基础.md",
+            ]
+        },
+        {
+            text: "CSS",
+            icon: "CSS",
+            prefix: "02-css",
+            collapsible: true,
+            children: [
+                "01.CSS基础.md",
+                "02.盒子模型.md",
+                "03.Flex布局.md",
+                "04.CSS进阶.md",
+            ]
+        },
+        {
+            text: "JS",
+            icon: "JS",
+            prefix: "03-js",
+            collapsible: true,
+            children: [
+                "01.JS基础.md",
             ]
         },
     ],

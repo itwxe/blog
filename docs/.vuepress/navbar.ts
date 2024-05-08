@@ -24,7 +24,7 @@ export const navbarConfig = navbar([
     {
         text: "前端笔记",
         icon: "web",
-        link: "/web-notes/base/01.HTML.md",
+        link: "/web-notes/01-html/01.HTML基础.md",
     },
     {
         text: "部署笔记",
