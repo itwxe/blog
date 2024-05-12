@@ -13,10 +13,10 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.9",
-    "@vuepress/plugin-search": "2.0.0-rc.26",
+    "@vuepress/plugin-search": "2.0.0-rc.28",
     "artalk": "2.7.3",
     "vue": "^3.4.24",
     "vuepress": "2.0.0-rc.9",
-    "vuepress-theme-hope": "2.0.0-rc.38"
+    "vuepress-theme-hope": "2.0.0-rc.40"
   }
 }
