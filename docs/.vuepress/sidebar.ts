@@ -198,7 +198,6 @@ export const sidebarConfig = sidebar({
                 "01.CSS基础.md",
                 "02.盒子模型.md",
                 "03.Flex布局.md",
-                "04.CSS进阶.md",
             ]
         },
         {
