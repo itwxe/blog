@@ -9,7 +9,10 @@ export default hopeTheme({
     author: {
         name: "IT王小二",
         url: "https://itwxe.com",
+        email: "itwxe@qq.com",
     },
+    license: "Apache-2.0 license",
+    favicon: "/favicon.ico",
 
     // navbar
     navbar: navbarConfig,

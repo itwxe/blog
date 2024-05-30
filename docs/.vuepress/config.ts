@@ -47,10 +47,7 @@ export default defineUserConfig({
         ],
     ],
     markdown: {
-        code: {
-            // 代码块禁用行号
-            lineNumbers: false
-        },
+
     },
     plugins: [
 
