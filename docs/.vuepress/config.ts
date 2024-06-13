@@ -10,7 +10,7 @@ export default defineUserConfig({
     // 指定 vuepress build 的输出目录
     dest: "./dist",
     // 是否开启默认预加载 js
-    shouldPrefetch: false,
+    shouldPrefetch: true,
     head: [
         // meta
         ["meta", { name: "robots", content: "all" }],
