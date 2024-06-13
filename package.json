@@ -12,11 +12,13 @@
     "update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.12",
-    "@vuepress/plugin-search": "2.0.0-rc.31",
+    "@vuepress/bundler-vite": "2.0.0-rc.13",
+    "@vuepress/plugin-search": "2.0.0-rc.34",
     "artalk": "2.7.3",
+    "flowchart.ts": "^3.0.0",
     "vue": "^3.4.27",
-    "vuepress": "2.0.0-rc.12",
-    "vuepress-theme-hope": "2.0.0-rc.46"
+    "vuepress": "2.0.0-rc.13",
+    "vuepress-plugin-md-enhance": "2.0.0-rc.48",
+    "vuepress-theme-hope": "2.0.0-rc.48"
   }
 }

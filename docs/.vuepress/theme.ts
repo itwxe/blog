@@ -113,6 +113,7 @@ export default hopeTheme({
             include: false,
             katex: false,
             footnote: true,
+            flowchart: true,
             mark: false,
             mermaid: false,
             // playground: {
