@@ -9,10 +9,10 @@ $theme-color: #2980B9;
   font-family: "JetBrainsMonoNL-Regular";
   src: url("/font/JetBrainsMonoNL-Regular.woff2");
 }
-//@font-face {
-//  font-family: "LXGWWenKaiMono-Regular";
-//  src: url("/font/LXGWWenKaiMono-Regular.woff2");
-//}
+@font-face {
+ font-family: "LXGWWenKaiMono-Regular";
+ src: url("/font/LXGWWenKaiMono-Regular.woff2");
+}
 @font-face {
   font-family: "title-font";
   src: url("/font/LXGWWenKaiMono-Regular-title-font.woff2");
@@ -28,9 +28,12 @@ $theme-color: #2980B9;
   font-family: "title-font";
 }
 
-//// 正文字体
-//$font-family: '"JetBrainsMonoNL-Regular"';
-//// 标题字体
+
+// 标题字体
 $font-family-heading: '"JetBrainsMonoNL-Regular"';
-//// 代码块字体
-//$font-family-mono: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
+// $font-family-heading: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
+// 正文字体
+$font-family: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
+// 代码块字体
+// $font-family-mono: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
+$font-family-mono: '"JetBrainsMonoNL-Regular"';
