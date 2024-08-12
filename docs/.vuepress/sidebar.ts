@@ -197,9 +197,9 @@ export const sidebarConfig = sidebar({
             children: [
                 "01.CSS基础.md",
                 "02.盒子模型.md",
-                "03.浮动.md",
-                "04.Flex布局.md",
-                "05.定位.md",
+                "03.定位.md",
+                "04.浮动.md",
+                "05.Flex布局.md",
                 "06.CSS技巧.md",
             ]
         },
