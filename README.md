@@ -43,7 +43,3 @@
 如果您发现文章中的不足或错误之处，欢迎在 issues 中提出。
 
 最后，感谢您在茫茫人海中阅读了我的文章。
-
-本项目由JetBrains开源许可支持。
-
-<a href="https://jb.gg/OpenSourceSupport"><img src="https://itwxe.com/images/system/JetBrains.svg" width="260" heigit="260"/></a>
