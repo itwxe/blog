@@ -210,6 +210,9 @@ export const sidebarConfig = sidebar({
             collapsible: true,
             children: [
                 "01.JS基础.md",
+                "02.数组.md",
+                "03.方法(函数).md",
+                "04.对象.md",
             ]
         },
     ],
