@@ -96,29 +96,29 @@ export default hopeTheme({
             server: "https://itwxe.com/comment",
             useBackendConf: true
         },
-
+        markdownImage: {
+            figure: true,
+            lazyload: false,
+            mark: false,
+            size: true,
+        },
+        markdownHint: {
+            hint: true,
+        },
+        shiki: {
+            lineNumbers: false,
+        },
         mdEnhance: {
             align: true,
             attrs: false,
             chart: false,
-            codetabs: false,
-            hint: true,
             demo: false,
             echarts: false,
-            figure: false,
             gfm: false,
-            imgLazyload: true,
-            imgSize: true,
-            imgMark: false,
             include: false,
-            katex: false,
             footnote: false,
             mark: false,
             mermaid: false,
-            // playground: {
-            //     presets: ["ts", "vue"],
-            // },
-            // revealjs: ["highlight", "math", "search", "notes", "zoom"],
             stylize: [
                 {
                     matcher: "Recommended",
@@ -132,14 +132,12 @@ export default hopeTheme({
                     },
                 },
             ],
+            tasklist: true,
             sub: true,
             sup: true,
-            tabs: false,
-            tasklist: true,
             vPre: false,
             vuePlayground: false,
         },
-
         search: {
             locales: {
                 '/': {

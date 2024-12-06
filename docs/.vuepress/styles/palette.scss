@@ -1,39 +1,8 @@
-// 主题色
-$theme-color: #2980B9;
-
-// 主要内容宽度
-//$content-width: 940px;
-
-// 字体
-@font-face {
-  font-family: "JetBrainsMonoNL-Regular";
-  src: url("/font/JetBrainsMonoNL-Regular.woff2");
-}
-@font-face {
- font-family: "LXGWWenKaiMono-Regular";
- src: url("/font/LXGWWenKaiMono-Regular.woff2");
-}
-@font-face {
-  font-family: "title-font";
-  src: url("/font/LXGWWenKaiMono-Regular-title-font.woff2");
-}
-
-// 站点标题字体
-.vp-site-name {
-  font-weight: 500;
-  font-family: "title-font";
-}
-#main-title {
-  font-weight: 500;
-  font-family: "title-font";
-}
-
-
 // 标题字体
-//$font-family-heading: '"JetBrainsMonoNL-Regular"';
- $font-family-heading: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
+//$vp-font-heading: '"JetBrainsMonoNL-Regular"';
+$vp-font-heading: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
 // 正文字体
-$font-family: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
+$vp-font: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
 // 代码块字体
-// $font-family-mono: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
-$font-family-mono: '"JetBrainsMonoNL-Regular"';
+//$vp-font-mono: '"JetBrainsMonoNL-Regular", "LXGWWenKaiMono-Regular"';
+$vp-font-mono: '"JetBrainsMonoNL-Regular"';

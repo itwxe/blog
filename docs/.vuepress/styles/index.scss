@@ -1,7 +1,31 @@
+// 字体
+@font-face {
+  font-family: "JetBrainsMonoNL-Regular";
+  src: url("/font/JetBrainsMonoNL-Regular.woff2");
+}
+@font-face {
+  font-family: "LXGWWenKaiMono-Regular";
+  src: url("/font/LXGWWenKaiMono-Regular.woff2");
+}
+@font-face {
+  font-family: "title-font";
+  src: url("/font/LXGWWenKaiMono-Regular-title-font.woff2");
+}
+
 blockquote {
   //border-color: #2980B9;
   background: #eef9fd;
   border-left: 0.3rem solid #2980B9;
   //border-radius: 0.3rem;
   padding: 0.6rem;
+}
+
+// 站点标题字体
+.vp-site-name {
+  font-weight: 500;
+  font-family: "title-font";
+}
+#main-title {
+  font-weight: 500;
+  font-family: "title-font";
 }
