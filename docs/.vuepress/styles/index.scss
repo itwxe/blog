@@ -21,11 +21,6 @@ blockquote {
 }
 
 // 站点标题字体
-.vp-site-name {
-  font-weight: 500;
-  font-family: "title-font";
-}
-#main-title {
-  font-weight: 500;
+.vp-site-name, #main-title {
   font-family: "title-font";
 }

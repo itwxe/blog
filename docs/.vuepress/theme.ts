@@ -97,7 +97,7 @@ export default hopeTheme({
             useBackendConf: true
         },
         markdownImage: {
-            figure: true,
+            figure: false,
             lazyload: false,
             mark: false,
             size: true,

@@ -28,8 +28,7 @@ export default defineUserConfig({
             "meta",
             {
                 name: "keywords",
-                content:
-                    "Java基础, JVM, 数据库, 并发编程, MySQL, Redis, MyBatis, Spring, SpringCloud, 系统设计, 分布式, 高可用, 高并发",
+                content: "IT王小二, IT技术小站, 编程, Java, JVM, 并发编程, MySQL, Redis, MyBatis, Spring, SpringCloud, 系统设计, 分布式, 高可用, 高并发",
             },
         ],
         ["meta", {name: "apple-mobile-web-app-capable", content: "yes"}],
@@ -46,9 +45,6 @@ export default defineUserConfig({
             })();`,
         ],
     ],
-    markdown: {
-
-    },
     plugins: [
 
     ],
