@@ -74,6 +74,19 @@ export default hopeTheme({
 
     breadcrumb: false,
 
+    markdown: {
+        highlighter: {
+            type: "shiki",
+        },
+        figure: false,
+        imgLazyload: false,
+        imgMark: false,
+        imgSize: true,
+        tasklist: true,
+        sub: true,
+        sup: true,
+    },
+
     plugins: {
         // blog: {
         //   autoExcerpt: true,
@@ -95,48 +108,6 @@ export default hopeTheme({
             sendBtn: "发表",
             server: "https://itwxe.com/comment",
             useBackendConf: true
-        },
-        markdownImage: {
-            figure: false,
-            lazyload: false,
-            mark: false,
-            size: true,
-        },
-        markdownHint: {
-            hint: true,
-        },
-        shiki: {
-            lineNumbers: false,
-        },
-        mdEnhance: {
-            align: true,
-            attrs: false,
-            chart: false,
-            demo: false,
-            echarts: false,
-            gfm: false,
-            include: false,
-            footnote: false,
-            mark: false,
-            mermaid: false,
-            stylize: [
-                {
-                    matcher: "Recommended",
-                    replacer: ({ tag }) => {
-                        if (tag === "em")
-                            return {
-                                tag: "Badge",
-                                attrs: { type: "tip" },
-                                content: "Recommended",
-                            };
-                    },
-                },
-            ],
-            tasklist: true,
-            sub: true,
-            sup: true,
-            vPre: false,
-            vuePlayground: false,
         },
         search: {
             locales: {
