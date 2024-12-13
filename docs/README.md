@@ -6,7 +6,7 @@ heroText: IT王小二的技术小站
 tagline: Java程序猿一枚，博客主要分享自己的编程学习笔记、编程技巧、实用工具...等等，当然也会分享职场生活，人生经历。
 actions:
   - text: 开始阅读 →
-    link: /java-notes/concurrent/6544e59d.html
+    link: /java-notes/concurrent/01.线程基础、线程之间的共享和协作.md
     type: primary
 ---
 
